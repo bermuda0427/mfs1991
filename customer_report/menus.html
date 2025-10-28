@@ -1,0 +1,4269 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>客戶購買統計與排名報告</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+            margin: 20px;
+            background-color: #f4f7f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .report-info {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            text-align: center;
+            color: #7f8c8d;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #e9f7ef;
+        }
+        .rank-1 { background-color: #ffd700; color: #333; font-weight: bold; }
+        .rank-2 { background-color: #c0c0c0; color: #333; font-weight: bold; }
+        .rank-3 { background-color: #cd7f32; color: #333; font-weight: bold; }
+        .money {
+            text-align: right;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .items {
+            white-space: pre-wrap; /* 保持換行 */
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>客戶購買統計與排名報告</h1>
+        <div class="report-info">
+            報告生成時間：2025-10-28 01:26:06
+            <br>
+            **僅包含「完成」狀態的訂單**
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>客戶姓名</th>
+                    <th>電子信箱</th>
+                    <th>累計購買金額 (NTD)</th>
+                    <th>累計購買商品 (名稱 x 數量)</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+    <tr>
+        <td class="rank-1">1</td>
+        <td>蕭麗君</td>
+        <td>hsiaoannie0925@gmail.com</td>
+        <td class="money">573405.00</td>
+        <td class="items">KDCA 精油調香師的最愛！37種純精油調香材料工具包 (x29)<br>南非玫瑰天竺葵精油 15ml (x3)<br>香水草精油 5ml (x1)<br>洞悉卡42支純精油正瓶 (x1)<br>黃金能量精油 5ml 古老豐盛祕方 (x1)<br>【客製單】調香材料工具包 (x1)<br>調香師的最愛！調香材料工具包 (x70)<br>【贈品】限定版 SPX極高濃度原液 5ml*1瓶（市價1380） (x1)<br>法式情慾香水身體乳 英國梨小蒼蘭 (x1)<br>超實用DIY調香工具組 香水級酒精+香水空瓶+調香工具 輕鬆做出自己的精油香水 (x2)<br>美好的一天 魔法精油香水 20ml – 正能量喜悅 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="rank-2">2</td>
+        <td>Manas</td>
+        <td>manasma@icloud.com</td>
+        <td class="money">150338.00</td>
+        <td class="items">日本桃花精油 15ml (x1)<br>發發發聚寶盆套組：包你今年一路發！ (x1)<br>黃金能量香霧 3ml - 幸運神香降臨 (x4)<br>特別受歡迎 魔法精油 10ml 人緣加持 (x1)<br>費洛蒙的世界® 尊爵版 GPX 職場社交配方 亞洲傳奇愛情神香 10ml (x2)<br>黃金能量精油 5ml - 古老豐盛祕方 (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="rank-3">3</td>
+        <td>廖鎵玉</td>
+        <td>lkk2130@hotmail.com</td>
+        <td class="money">133302.00</td>
+        <td class="items">【洞悉卡精油調香組合】單方42款純精油 2ml 材料工具包 (x1)<br>調香實驗室37款精油 X 2毫升體驗組合包 (x20)<br>【客製單】調香實驗室37款精油 (x1)<br>【客製單】調香實驗室37款精油 X 2毫升體驗組合包 (x2)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>墨西哥甜橙精油 15ml (x1)<br>財富金鑰 魔法精油香水 35ml 金錢磁場 (x1)<br>特別受歡迎 魔法精油香水 20ml – 好人緣 (x1)<br>正氣師場域複芳純露 100ml (x1)<br>西印度檀香精油 (阿米香樹) 15ml (x1)<br>純植物性3合1基底油（按摩油）500ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">4</td>
+        <td>葉乃華</td>
+        <td>k301432@gmail.com</td>
+        <td class="money">108602.00</td>
+        <td class="items">中國雪松精油 15ml (x1)<br>法國百里香精油 15ml (x1)<br>不丹柏木精油 15ml (x1)<br>芙蓉精油 15ml (x1)<br>福爾摩沙水古杉精油 (台灣檜木) 15ml (x1)<br>義大利永久花精油 (蠟菊) 5ml (x1)<br>企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x4)<br>平安淨化純露 100ml 改善氣場 (x11)<br>喜馬拉雅山雪松精油 15ml (x1)<br>互葉白千層精油 (茶樹) 15ml (x1)<br>厄瓜多爾秘魯聖木精油 15ml (x1)<br>法國肉桂精油 (肉桂皮) 15ml (x1)<br>KDCA 精油調香師的最愛！37種純精油調香材料工具包 (x1)<br>爪哇岩蘭草精油 5ml (x1)<br>印度沒藥精油（膠狀）5ml (x1)<br>法國橙花精油 5ml (x1)<br>神聖箴言純露 100ml 連接高我 (x1)<br>沉思岩 魔法精油 10ml 思考與閱讀 (x1)<br>美國留蘭香精油 (綠薄荷) 15ml (x4)<br>貝殼精油 15ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">5</td>
+        <td>黃馨平</td>
+        <td>s920081s920081@gmail.com</td>
+        <td class="money">102142.00</td>
+        <td class="items">黃金能量精油 5ml 古老豐盛祕方 (x1)<br>空間香氛精油噴霧【大旺運喜氣】開運招財 35ml (x1)<br>財富金鑰 魔法精油香水 35ml 金錢磁場 (x2)<br>財富金鑰香水 試香體驗瓶 2ml (x1)<br>南非玫瑰天竺葵精油 15ml (x2)<br>大旺運喜氣 魔法精油香水 35ml 開運招財 (x3)<br>特別受歡迎 魔法精油香水 35ml 人緣加持 (x5)<br>大旺運喜氣香水 試香體驗瓶 2ml (x2)<br>印度檸檬尤加利精油 15ml (x1)<br>守護結界 精油香水 35ml 驅邪鎮煞 (x1)<br>客製化香氛：幸運女神之吻 60ml (x1)<br>客製化香氛：能量防護光環 60ml (x1)<br>正氣師場域純露 100ml 化煞防小人 (x1)<br>逐夢騎士 試香體驗瓶 2ml 限購1瓶 (x1)<br>孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x2)<br>平安淨化複芳純露 100ml (x1)<br>美好的一天 魔法精油香水 20ml – 正能量喜悅 (x1)<br>紅盾禦守精油酒精噴霧 – 第三重防禦力 500ml – 買大送小 (x1)<br>正氣師場域複芳純露 100ml (x1)<br>美好的一天 魔杖油 10ml (x1)<br>守護結界 魔杖油 10ml (x1)<br>月老姻緣香水 100ml - 正桃花好人緣 (x1)<br>鈔能量💰開運鈔票香包【5入】加贈黃金香霧3ml (x1)<br>法式情慾香水身體乳 英國梨小蒼蘭 (x1)<br>黃金能量精油 5ml - 古老豐盛祕方 (x1)<br>黃金能量香霧 3ml - 幸運神香降臨 (x2)<br>財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">6</td>
+        <td>黃郁惠</td>
+        <td>r941097@gmail.com</td>
+        <td class="money">101397.00</td>
+        <td class="items">印度玫瑰木精油 (花梨木) 15ml (x1)<br>加勒比海萊姆精油 15ml (x1)<br>印度野生紅沒藥精油（液狀）5ml (x1)<br>芙蓉精油 15ml (x1)<br>和種薄荷精油 15ml (x1)<br>神聖箴言精油 10ml 高我頻率接軌 (x1)<br>夏威夷槴子花精油 15ml (x1)<br>義大利柑橘精油 (紅柑) 15ml (x2)<br>Nesti 義大利花精皂 70週年典藏紀念版-鉑金菁萃250g (x1)<br>甜樺木精油 15ml (x1)<br>黃金能量精油 5ml 古老豐盛祕方 (x1)<br>神聖乳香精油 15ml (x1)<br>南非復活草精油 15ml (x2)<br>【客製單】黃金能量香霧 10ml (x1)<br>康乃馨精油 (石竹) 15ml (x1)<br>貝殼精油 15ml (x1)<br>金銀花精油 15ml (x1)<br>日本桃花精油 15ml (x1)<br>費洛蒙的世界® 61.淘氣丘比特 曖昧暗示中性香 12ml (x1)<br>客製化香氛：豐盛財富 60ml (x1)<br>安靜的烏鴉 魔法精油香水 35ml 終結精神內耗 (x1)<br>沉思岩 魔法精油 10ml 思考與閱讀 (x1)<br>愛情靈鑰 魔法精油香水 35ml 吸引愛情 (x1)<br>企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x2)<br>美好的一天 精油香水 35ml 正能量喜悅 (x1)<br>月老姻緣香水 20ml - 正桃花好人緣 (x1)<br>神秘漂浮島 魔法精油香水 20ml – 第六感靈感 (x1)<br>沉思岩 魔法精油香水 20ml – 思考與閱讀 (x1)<br>靈鳥森林 魔法精油香水 20ml - 靈性進化 (x1)<br>富到流油招財精油組盒 (x1)<br>月老姻緣精油 10ml – 正桃花好人緣 (x1)<br>【買一送一】GPX 高濃度黃金費洛蒙-女士配方10ml 送 5ml (x1)<br>【買一送一】GPX 高濃度黃金費洛蒙-男士配方10ml 送 5ml (x1)<br>獨角獸 魔法精油香水 20ml – 顯化與創造力 (x1)<br>鈔能量💰開運鈔票香包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">7</td>
+        <td>蕭雨祺</td>
+        <td>wendy.hsiao@hotmail.com</td>
+        <td class="money">95095.00</td>
+        <td class="items">守護結界 精油香水 35ml 特殊防護磁場干擾 (x1)<br>正氣師場域精油 10ml 驅邪鎮煞防小人 (x1)<br>藍盾勁活精油 - 第五重生命力 10ml (x1)<br>特別受歡迎 魔法精油香水 35ml 人緣加持 (x1)<br>客製化香氛：能量防護光環 60ml (x1)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>費洛蒙的世界® 61.淘氣丘比特 曖昧暗示中性香 12ml (x1)<br>【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)<br>沉思岩 魔法精油 10ml - 思考與閱讀 (x1)<br>【贈品】盒裝精油擴香木 (x3)<br>超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x3)<br>印度乳香精油 15ml (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)<br>【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)<br>盒裝精油擴香木 花梨木 (x2)<br>盒裝精油擴香木 櫻桃木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">8</td>
+        <td>張家瑛</td>
+        <td>jiaying30@gmail.com</td>
+        <td class="money">91507.00</td>
+        <td class="items">斯里蘭卡黑胡椒精油 15ml (x1)<br>平安淨化純露 100ml 改善氣場 (x3)<br>黃金全系列【ABC組合】一次帶走 (x1)<br>藍膠尤加利精油 15ml (x1)<br>費洛蒙的世界® 極致版 CPX-WR 社交男士配方 喜玲瓏經典香引 10ml (x2)<br>康乃馨精油 (石竹) 15ml (x1)<br>法國迷迭香精油 15ml (x1)<br>中國生薑精油 15ml (x1)<br>正氣師場域純露 100ml 化煞防小人 (x1)<br>身體按摩油（無香） 250ml (x1)<br>夜花茉莉 (珊瑚茉莉) 精油 5ml (x1)<br>守護結界精油 10ml 驅邪鎮煞 (x1)<br>印度乳香精油 15ml (x1)<br>圓形柴堆精油擴香木：黑桃木 (x2)<br>夢遊仙境 魔法精油 10ml 一覺好眠 (x1)<br>企鵝噴噴 身體涼感噴霧 100ml (x3)<br>守護結界 精油香水 35ml 驅邪鎮煞 (x1)<br>獨角獸 魔法精油 10ml - 顯化與創造力 (x1)<br>守護結界 魔法精油 10ml - 驅邪鎮煞 (x1)<br>厄瓜多爾秘魯聖木精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">9</td>
+        <td>魏妙芳</td>
+        <td>ericabetty@hotmail.com</td>
+        <td class="money">68380.00</td>
+        <td class="items">琥珀精油15ml (x1)<br>守護結界 精油香水 35ml 驅邪鎮煞 (x1)<br>歐洲赤松精油 15ml (x1)<br>八字命理精油木盒套組 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">10</td>
+        <td>陳亮君</td>
+        <td>pisces.shellychen@gmail.com</td>
+        <td class="money">67389.00</td>
+        <td class="items">芙蓉精油 15ml (x1)<br>真正薰衣草精油 15ml (x2)<br>印度香茅精油 15ml (x1)<br>保濕身體乳（無香） 250ml (x2)<br>正氣師場域純露 100ml 化煞防小人 (x1)<br>印度艾草精油 15ml (x1)<br>愛情靈鑰 魔法精油 10ml 吸引愛情 (x2)<br>義大利檸檬精油 15ml (x2)<br>【客製單】伽摩Come on 催情魅惑中性香 (x1)<br>平安淨化純露 100ml 改善氣場 (x2)<br>克里米亞玫瑰精油 15ml (x1)<br>依蘭香精油 (第二道依蘭依蘭) 15ml (x2)<br>費洛蒙的世界® 極致版 CPX-VS 女士配方 美人經典香引 10ml (x1)<br>費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x2)<br>安靜的烏鴉 魔法精油 10ml 終結精神內耗 (x1)<br>法國迷迭香精油 15ml (x2)<br>企鵝噴噴 身體涼感噴霧 100ml (x2)<br>愛情靈鑰 魔法精油 10ml - 吸引愛情 (x1)<br>夢遊仙境 魔法精油 10ml - 睡眠 (x5)<br>法式情慾香水身體乳 聖潔紫蘭花 (x1)<br>沉思岩 魔法精油 10ml - 思考與閱讀 (x1)<br>【買三送三】超級防禦精油三重奏 送 精油酒精噴霧三重奏 (x3)<br>47.使壞維納斯－誘惑、挑逗、回頭率（女香）12ml (x2)<br>Nesti 義大利花精皂 托斯卡尼風情畫系列-鄉村修道院皂 250g (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">11</td>
+        <td>王秀玲</td>
+        <td>k75813@yahoo.com.tw</td>
+        <td class="money">62825.00</td>
+        <td class="items">【客製單】客製化香氛：豐盛財富顯化 (x1)<br>【客製單】魔法精油組 (x1)<br>客製化香氛：幸運女神之吻 60ml (x1)<br>獨角獸 魔法精油 10ml 顯化與創造力 (x1)<br>費洛蒙的世界® 典藏版 限定禮盒組 女士配方 VS (x1)<br>愛情靈鑰 魔法精油香水 20ml – 吸引愛情 (x1)<br>黃金能量精油 5ml - 古老豐盛祕方 (x1)<br>CPX-VS 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)<br>超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)<br>黃金能量精油 5ml (x2)<br>真正薰衣草精油 15ml (x1)<br>獨角獸 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">12</td>
+        <td>洪韻玫</td>
+        <td>may9783@yahoo.com.tw</td>
+        <td class="money">62309.00</td>
+        <td class="items">歐洲赤松精油 15ml (x1)<br>客製化香氛：豐盛財富顯化 60ml (x1)<br>安靜的烏鴉 魔法精油 10ml - 平靜思慮 (x2)<br>盒裝精油擴香木 花梨木 (x1)<br>【買三送三】超級防禦精油三重奏 送 精油酒精噴霧三重奏 (x2)<br>超級防禦精油三重奏 ☆嚴峻期間☆全民優惠組合 (x2)<br>洞悉大師精油香水 20ml (x1)<br>超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)<br>【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x2)<br>盒裝精油擴香木 桃花芯木 (x2)<br>黃金能量香霧 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">13</td>
+        <td>鄭琹云</td>
+        <td>tequilanlparoma@gmail.com</td>
+        <td class="money">51165.00</td>
+        <td class="items">地中海苦橙精油 15ml (x1)<br>企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)<br>互葉白千層精油 (茶樹) 15ml (x2)<br>純植物性3合1基底油（按摩油） 100ml (x1)<br>埃及馬鬱蘭精油 15ml (x1)<br>法國百里香精油 15ml (x1)<br>香蜂草精油 5ml (x1)<br>【B.財運旺旺組】2025超強組合！黃金能量 × 香氣加乘，財運旺旺一整年｜限量30組 (x2)<br>歐薄荷精油 (胡椒薄荷) 15ml (x1)<br>Nesti 義大利花精皂 60週年限量版黃金能量皂250g (x2)<br>黃金能量精油 5ml 古老豐盛祕方 (x2)<br>【客製單】試香體驗瓶 (x1)<br>純植物性3合1基底油（按摩油）1000ml (x1)<br>純植物性3合1基底油（按摩油） 250ml (x1)<br>甜杏仁油（無香）250ml (x3)<br>科西嘉島香桃木 15ml (x1)<br>六六大順套組：全家人一整年運勢亨通 (x1)<br>聖誕限定精油套組：奧爾文的魔法馴鹿 (x1)<br>孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x3)<br>西印度檀香精油 (阿米香樹) 15ml (x1)<br>靈鳥森林 魔法精油香水 20ml - 靈性進化 (x1)<br>財富金鑰 魔法精油香水 20ml – 金錢能量 (x2)<br>特別受歡迎 魔法精油香水 20ml – 好人緣 (x1)<br>大旺運喜氣 魔法精油香水 20ml – 開運強運 (x1)<br>6666財源滾滾套組，新的一年，讓全家人一整年運勢亨通 (x1)<br>獨角獸 魔法精油香水 20ml – 顯化與創造力 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x2)<br>尊爵版 GPX-W 黃金費洛蒙香水-女用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">14</td>
+        <td>張豐穎</td>
+        <td>vichappyvic@gmail.com</td>
+        <td class="money">50530.00</td>
+        <td class="items">特別受歡迎 魔法精油 10ml (x2)<br>神氣活現 魔法精油 10ml (x1)<br>盒裝精油擴香木 烏金木 (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">15</td>
+        <td>賴惠玲</td>
+        <td>happy1205@gmail.com</td>
+        <td class="money">45521.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 35ml 開運招財 (x1)<br>守護結界 精油香水 35ml 驅邪鎮煞 (x1)<br>黃金能量精油 5ml - 古老豐盛祕方 (x2)<br>法式情慾香水身體乳 經典白麝香 (x1)<br>神氣活現 魔法精油香水 20ml – 自信心積極 (x1)<br>神聖箴言精油 10ml-神聖頻率接軌 (x1)<br>洞悉大師精油 10ml - 意識感知 (x1)<br>財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)<br>福爾摩沙水古杉精油 (台灣檜木) 15ml (x1)<br>守護結界 魔法精油 10ml (x2)<br>神秘漂浮島 魔法精油 10ml (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)<br>大旺運喜氣 魔法精油 10ml (x1)<br>盒裝精油擴香木 桃花芯木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">16</td>
+        <td>林芸均</td>
+        <td>vh4811@gmail.com</td>
+        <td class="money">45133.00</td>
+        <td class="items">Nesti 義大利花精皂 60週年限量版黃金能量皂250g (x1)<br>黃金能量香霧 16ml - 淘金概念香款 (x9)<br>義大利檸檬精油 15ml (x3)<br>義大利佛手柑精油 15ml (x2)<br>粉葡萄柚精油 15ml (x2)<br>墨西哥甜橙精油 15ml (x3)<br>南非玫瑰天竺葵精油 15ml (x1)<br>費洛蒙的世界® 61.淘氣丘比特 曖昧暗示中性香 12ml (x1)<br>費洛蒙的世界® 16.伽摩Come on 催情魅惑中性香 12ml (x2)<br>費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x3)<br>法式情慾香水身體乳 英國梨小蒼蘭 (x1)<br>【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x3)<br>黃金能量香霧 16ml (x2)<br>鈔能量💰開運鈔票香包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">17</td>
+        <td>侯若蓁</td>
+        <td>slowly9911@gmail.com</td>
+        <td class="money">41032.00</td>
+        <td class="items">義大利佛手柑精油 15ml (x6)<br>費洛蒙的世界® 16.伽摩Come on 催情魅惑中性香 12ml (x1)<br>KDCA 精油調香師的最愛！37種純精油調香材料工具包 (x1)<br>Nesti 義大利花精皂 60週年限量版黃金能量皂250g (x1)<br>平安淨化純露 100ml 改善氣場 (x1)<br>印度玫瑰木精油 (花梨木) 15ml (x1)<br>冥想靜心純露 100ml 專注力升級版 (x1)<br>中國生薑精油 15ml (x1)<br>綠花白千層精油 15ml (x1)<br>印度檸檬尤加利精油 15ml (x1)<br>印度乳香精油 15ml (x1)<br>留尼旺島波旁天竺葵精油 15ml (x1)<br>西伯利亞冷杉精油 15ml (x1)<br>法國絲柏精油 15ml (x1)<br>中國雪松精油 15ml (x1)<br>真正薰衣草精油 15ml (x1)<br>北美神聖白鼠尾草 15ml (x1)<br>印度羅勒精油 15ml (x1)<br>法國迷迭香精油 15ml (x1)<br>印度檸檬香茅精油 15ml (x1)<br>依蘭香精油 (第二道依蘭依蘭) 15ml (x1)<br>美國留蘭香精油 (綠薄荷) 15ml (x1)<br>粉葡萄柚精油 15ml (x1)<br>特別受歡迎 魔法精油 10ml - 好人緣 (x1)<br>沉思岩 魔法精油 10ml - 思考與閱讀 (x1)<br>月老姻緣香水 20ml - 正桃花好人緣 (x1)<br>神秘漂浮島 魔法精油 10ml - 第六感靈感 (x1)<br>調香師的最愛！調香材料工具包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">18</td>
+        <td>陳蓉佩</td>
+        <td>13ona534@gmail.com</td>
+        <td class="money">39619.00</td>
+        <td class="items">印度杜松葉精油 15ml (x1)<br>天竺乳香精油 15ml (x1)<br>正氣師場域精油 10ml 驅邪辟煞神器 (x1)<br>綠盾暢氣精油 - 第一重淨化力 10ml - 空氣清新＆蚊蟲叮咬 (x1)<br>法國迷迭香精油 15ml (x1)<br>埃及馬鬱蘭精油 15ml (x1)<br>北美神聖白鼠尾草 15ml (x1)<br>平安淨化純露 100ml 改善氣場 (x3)<br>紅盾禦守精油 - 第三重防禦力 10ml - 高度警戒＆減少空氣中傳播物 (x1)<br>純植物性3合1基底油（按摩油）500ml (x2)<br>法國絲柏精油 15ml (x1)<br>真正薰衣草精油 15ml (x1)<br>爪哇岩蘭草精油 5ml (x1)<br>夢遊仙境 魔法精油香水 35ml 一覺好眠 (x1)<br>守護結界 魔法精油香水 20ml – 驅邪鎮煞 (x1)<br>厄瓜多爾秘魯聖木精油 15ml (x1)<br>西班牙鼠尾草精油 15ml (x1)<br>Nesti 義大利花精皂 尊寵黑金皂250g (x1)<br>【買三送三】超級防禦精油三重奏 送 精油酒精噴霧三重奏 (x1)<br>紅盾禦守精油酒精噴霧 - 第三重防禦力 100ml - 高度警戒＆減少空氣中傳播物 (x1)<br>印度乳香精油 15ml (x1)<br>正氣師場域複芳純露 100ml (x6)</td>
+    </tr>
+    
+    <tr>
+        <td class="">19</td>
+        <td>黃心怡</td>
+        <td>as895372@gmail.com</td>
+        <td class="money">38716.00</td>
+        <td class="items">守護結界精油 10ml 驅邪鎮煞 (x1)<br>美好的一天 魔法精油 10ml 正能量喜悅 (x8)<br>費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x1)<br>費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x2)<br>美好的一天 魔法精油 10ml - 正能量喜悅 (x1)<br>【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">20</td>
+        <td>識媛</td>
+        <td>shryuan@yahoo.com.tw</td>
+        <td class="money">37692.00</td>
+        <td class="items">財富金鑰 魔法精油 10ml 金錢磁場 (x1)<br>圓形柴堆精油擴香木：黑桃木（本商品不含貼紙） (x1)<br>費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x2)<br>財富金鑰 魔法精油 10ml - 金錢能量 (x1)<br>鈔能量💰開運鈔票香包【3入】加贈黃金香霧3ml (x1)<br>【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)<br>SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">21</td>
+        <td>鄭芝妍</td>
+        <td>angelinacheng6768@gmail.com</td>
+        <td class="money">36699.00</td>
+        <td class="items">【A.黃金雙霧組】2025開運必備！雙倍黃金香氣，招財旺運一次到位｜限量30組 (x1)<br>大旺運喜氣 魔法精油香水 35ml 開運招財 (x2)<br>【客製單】精油X3 (x1)<br>神氣活現 魔法精油香水 35ml 積極自信心 (x1)<br>橘盾肌享精油 - 第四重舒展力 10ml (x1)<br>鈔能量💰開運鈔票香包【3入】加贈黃金香霧3ml (x1)<br>超級防禦精油三重奏 ☆嚴峻期間☆全民優惠組合 (x1)<br>黃盾伏衛精油 - 第二重保護力 10ml - 空氣淨化＆除臭殺菌 (x1)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>安靜的烏鴉 魔法精油香水 35ml 終結精神內耗 (x1)<br>守護結界 精油香水 35ml 驅邪鎮煞 (x1)<br>義大利檸檬精油 15ml (x1)<br>墨西哥甜橙精油 15ml (x1)<br>紅盾禦守精油 - 第三重防禦力 10ml - 高度警戒＆減少空氣中傳播物 (x1)<br>綠盾暢氣精油 - 第一重淨化力 10ml - 空氣清新＆蚊蟲叮咬 (x2)<br>守護結界 魔法精油香水 20ml – 驅邪鎮煞 (x1)<br>盒裝精油擴香木 桃花芯木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">22</td>
+        <td>黃珮為</td>
+        <td>peiwei1101@gmail.com</td>
+        <td class="money">34802.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-S 職場社交配方 極高濃度原液 無香味 (x3)<br>費洛蒙的世界® 典藏版 限定禮盒組 社交女士配方 (x1)<br>黃金能量精油 5ml - 古老豐盛祕方 (x1)<br>黃金能量精油 5ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">23</td>
+        <td>鍾文音</td>
+        <td>wenin_nina@yahoo.com.tw</td>
+        <td class="money">33675.00</td>
+        <td class="items">空間香氛精油噴霧【神氣活現】積極自信心 35ml (x1)<br>費洛蒙的世界® 理想情人朵夏亞 女士配方 模範生戀人 30ml (x1)<br>愛情靈鑰 魔法精油香水 35ml 吸引愛情 (x1)<br>【B.財運旺旺組】2025超強組合！黃金能量 × 香氣加乘，財運旺旺一整年｜限量30組 (x1)<br>費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">24</td>
+        <td>楊惠桂</td>
+        <td>judyiongyc@gmail.com</td>
+        <td class="money">33338.00</td>
+        <td class="items">黃盾伏衛精油酒精噴霧 – 第二重保護力 500ml – 買大送小 (x1)<br>綠盾暢氣精油酒精噴霧 – 第一重淨化力 500ml – 買大送小 (x2)<br>大旺運喜氣香水 試香體驗瓶 2ml (x1)<br>大旺運喜氣 魔法精油香水 35ml 開運招財 (x4)<br>鈔能量💰開運鈔票香包【10入】加贈黃金香霧10ml (x1)<br>Nesti 義大利花精皂 尊寵黑金皂250g (x1)<br>阿特拉斯山雪松精油 15ml (x1)<br>Nesti 義大利花精皂 天然花妍系列-香柏木皂 250g (x3)<br>黃金能量精油 5ml 古老豐盛祕方 (x1)<br>特別受歡迎 魔法精油香水 35ml 人緣加持 (x1)<br>黃金能量香霧 16ml - 淘金概念香款 (x1)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>Nesti 義大利花精皂 優雅奢華系列-精緻銀白奢華風250g (x1)<br>黃盾伏衛精油酒精噴霧 - 第二重保護力 100ml - 空氣淨化＆除臭殺菌 (x1)<br>靈鳥森林 魔法精油香水 20ml - 靈性進化 (x1)<br>盒裝精油擴香木 烏金木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">25</td>
+        <td>王于雯</td>
+        <td>sherry0975072992@gmail.com</td>
+        <td class="money">32717.00</td>
+        <td class="items">福爾摩沙水古杉精油 (台灣檜木) 15ml (x1)<br>夜息香精油 (薄荷) 15ml (x1)<br>厄瓜多爾秘魯聖木精油 15ml (x1)<br>法式情慾香水身體乳 英國梨小蒼蘭 (x1)<br>白珠樹精油 (冬青) 15ml (x1)<br>黃金能量香霧 10ml - 財富的鑰匙 (x2)<br>【買三送三】超級防禦精油三重奏 送 精油酒精噴霧三重奏 (x1)<br>超級防禦精油三重奏 ☆嚴峻期間☆全民優惠組合 (x1)<br>正氣師場域複芳純露 100ml (x2)<br>黃金能量香霧 3ml (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">26</td>
+        <td>施奕如</td>
+        <td>cocotaxi64@gmail.com</td>
+        <td class="money">32575.00</td>
+        <td class="items">黃金能量香霧 3ml - 幸運神香降臨 (x35)<br>【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x2)<br>黃金能量香霧 3ml - 古老豐盛祕方 (x3)<br>黃金能量香霧 3ml (x15)<br>盒裝精油擴香木 桃花芯木 (x1)<br>愛情靈鑰 魔杖精油 10ml (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">27</td>
+        <td>張宜靖</td>
+        <td>mei660117@yahoo.com.tw</td>
+        <td class="money">32318.00</td>
+        <td class="items">費洛蒙的世界® 理想情人朵夏亞 社交配方人生漲停中 (x1)<br>【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)<br>【贈品】韓國 Polar4 檜木芳香塊 (x5)<br>財富金鑰 魔法精油 10ml - 金錢能量 (x1)<br>月老姻緣香水 60ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">28</td>
+        <td>王姵俙</td>
+        <td>nemona6134134@gmail.com</td>
+        <td class="money">31978.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x1)<br>正氣師場域純露 100ml 化煞防小人 (x7)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)<br>粉葡萄柚精油 15ml (x1)<br>平安淨化複芳純露 100ml (x1)<br>守護結界 魔法精油香水 20ml – 驅邪鎮煞 (x1)<br>費洛蒙的世界® 隱形香息SPX-W女士配方 極高濃度原液 無香味 (x2)<br>特別受歡迎 魔法精油香水 20ml – 好人緣 (x1)<br>財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)<br>【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">29</td>
+        <td>王酈珉</td>
+        <td>gensinfamily@gmail.com</td>
+        <td class="money">31187.00</td>
+        <td class="items">非洲野生羅文莎葉精油 15ml (x1)<br>正氣師場域精油 10ml 驅邪鎮煞防小人 (x2)<br>夢遊仙境 魔法精油 10ml 一覺好眠 (x1)<br>正氣師場域純露 100ml 化煞防小人 (x1)<br>正氣師場域精油 10ml 驅邪辟煞神器 (x1)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>正氣師場域精油 10ml-化煞＆防小人 (x2)<br>守護結界 魔法精油 10ml - 驅邪鎮煞 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">30</td>
+        <td>李麗敏</td>
+        <td>rlillycute@gmail.com</td>
+        <td class="money">29158.00</td>
+        <td class="items">加拿大黑雲杉精油 15ml (x1)<br>義大利佛手柑精油 15ml (x1)<br>中國生薑精油 15ml (x1)<br>和種薄荷精油 15ml (x1)<br>北美神聖白鼠尾草 15ml (x1)<br>平安淨化純露 100ml 改善氣場 (x2)<br>大旺運喜氣 魔法精油香水 35ml 開運招財 (x1)<br>真正薰衣草精油 15ml (x2)<br>埃及馬鬱蘭精油 15ml (x1)<br>神聖乳香精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">31</td>
+        <td>顏淑芬</td>
+        <td>anjoy5588@gmail.com</td>
+        <td class="money">26626.00</td>
+        <td class="items">中國生薑精油 15ml (x2)<br>甜樺木精油 15ml (x1)<br>埃及香葉天竺葵精油 15ml (x1)<br>互葉白千層精油 (茶樹) 15ml (x3)<br>義大利佛手柑精油 15ml (x1)<br>南非玫瑰天竺葵精油 15ml (x1)<br>【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x1)<br>歐薄荷精油 (胡椒薄荷) 15ml (x1)<br>墨西哥甜橙精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">32</td>
+        <td>張峰岫</td>
+        <td>cfsagnes@gmail.com</td>
+        <td class="money">26173.00</td>
+        <td class="items">黃金能量精油 5ml 古老豐盛祕方 (x2)<br>費洛蒙的世界® 極致版 CPX-VS 女士配方 美人經典香引 10ml (x1)<br>費洛蒙的世界® 尊爵版 GPX 職場社交配方 亞洲傳奇愛情神香 10ml (x2)<br>黃金能量香霧 3ml - 幸運神香降臨 (x15)<br>企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)<br>法式情慾香水身體乳 英國梨小蒼蘭 (x2)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">33</td>
+        <td>黃浤峻</td>
+        <td>night992003@gmail.com</td>
+        <td class="money">24461.00</td>
+        <td class="items">神聖乳香精油 15ml (x1)<br>黃金能量精油 5ml 古老豐盛祕方 (x4)<br>財富金鑰 魔法精油香水 35ml 金錢磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">34</td>
+        <td>Tok Hong Quan</td>
+        <td>hongquantok95@gmail.com</td>
+        <td class="money">23951.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-S 職場社交配方 極高濃度原液 無香味 (x1)<br>黃金能量香霧 16ml - 淘金概念香款 (x1)<br>費洛蒙的世界® 性感激素PS男同志配方 愛情靈藥 無香味 (x1)<br>費洛蒙的世界®16.伽摩Come on－催情、慾望、魅惑（中性香水）12ml (x1)<br>月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">35</td>
+        <td>李玟瑾</td>
+        <td>s1668799@gmail.com</td>
+        <td class="money">23392.00</td>
+        <td class="items">企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x12)<br>正氣師場域精油 10ml 驅邪鎮煞防小人 (x2)<br>平安淨化精油 10ml 喪禮探病必備 (x1)<br>真正薰衣草精油 15ml (x2)<br>守護結界精油 10ml 驅邪鎮煞 (x1)<br>盒裝精油擴香木 烏金木 (x1)<br>愛情靈鑰 魔法精油香水 35ml 吸引愛情 (x1)<br>回青橙精油 (苦橙葉) 15ml (x1)<br>粉葡萄柚精油 15ml (x1)<br>逐夢騎士 試香體驗瓶 2ml 限購1瓶 (x1)<br>夜息香精油 (薄荷) 15ml (x1)<br>美國留蘭香精油 (綠薄荷) 15ml (x1)<br>孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)<br>印度SPA香氛沐浴鹽-孔雀寶石 (x1)<br>61.淘氣丘比特－曖昧、暗示、吸引（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">36</td>
+        <td>陳芳惟</td>
+        <td>jessica0727goo@gmail.com</td>
+        <td class="money">22724.00</td>
+        <td class="items">【財富金鑰】空間調頻精油噴霧 35ml｜金錢磁場 (x2)<br>生生不息 魔法精油 10ml 生命力 (x9)</td>
+    </tr>
+    
+    <tr>
+        <td class="">37</td>
+        <td>陳芝妤</td>
+        <td>vanesa0222@gmail.com</td>
+        <td class="money">22694.00</td>
+        <td class="items">正氣師場域複芳純露 100ml (x2)<br>貓頭鷹守護神 魔杖油 10ml (x1)<br>大旺運喜氣 魔杖油 10ml (x2)<br>貓頭鷹守護神 魔法精油香水 20ml – 保護磁場 (x1)<br>黃金能量香霧 10ml - 古老豐盛祕方 (x1)<br>財富金鑰 魔法精油 10ml (x1)<br>特別受歡迎 魔杖精油 10ml (x4)</td>
+    </tr>
+    
+    <tr>
+        <td class="">38</td>
+        <td>馮瑋婷</td>
+        <td>tristarong811@gmail.com</td>
+        <td class="money">22202.00</td>
+        <td class="items">費洛蒙的世界® 61.淘氣丘比特 曖昧暗示中性香 12ml (x1)<br>孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)<br>費洛蒙的世界®CPX-VY 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)<br>平安淨化複芳純露 100ml (x1)<br>盒裝精油擴香木 金絲柚木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">39</td>
+        <td>王姵俙</td>
+        <td>141319nmsnms141319@gmail.com</td>
+        <td class="money">21805.00</td>
+        <td class="items">守護結界 魔法精油香水 20ml – 驅邪鎮煞 (x1)<br>初始太極精油香水 20ml (x2)<br>尊爵版 GPX-W 黃金費洛蒙香水-女用 10ml (x1)<br>尊爵版 GPX-S 黃金費洛蒙香水-職場社交 10ml (x1)<br>安靜的烏鴉 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">40</td>
+        <td>施婷慧</td>
+        <td>tine9420@yahoo.com.tw</td>
+        <td class="money">21777.00</td>
+        <td class="items">Nesti 義大利花精皂 70週年典藏紀念版-鉑金菁萃250g (x7)<br>印度檸檬香茅精油 15ml (x1)<br>Nesti 義大利花精皂 優雅奢華系列-熱情金銅奢華風250g (x1)<br>Nesti 義大利花精皂 60週年限量版黃金能量皂250g (x1)<br>Nesti 義大利花精皂 托斯卡尼風情畫系列-魔境森林皂 250g (x1)<br>費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x2)<br>黃金能量香霧 3ml - 幸運神香降臨 (x2)<br>歐薄荷精油 (胡椒薄荷) 15ml (x1)<br>費洛蒙的世界® 極致版 CPX-VS 女士配方 美人經典香引 10ml (x1)<br>費洛蒙的世界® 極致版 CPX-WR 社交女士配方 喜玲瓏經典香引 10ml (x3)<br>西印度檀香精油 (阿米香樹) 15ml (x1)<br>CPX-VY 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x3)<br>CPX-VS 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">41</td>
+        <td>黃吉光</td>
+        <td>2021renji@gmail.com</td>
+        <td class="money">21720.00</td>
+        <td class="items">【C.潑天富貴組】2025鐵粉精選！黃金香氛，富貴加持不斷線｜限量30組 (x1)<br>守護結界精油 10ml 驅邪鎮煞 (x1)<br>義大利佛手柑精油 15ml (x8)<br>Nesti 義大利花精皂 尊寵黑金皂250g (x1)<br>神秘漂浮島 魔法精油 10ml (x1)<br>印度野生紅沒藥精油（液狀）5ml (x1)<br>印度羅勒精油 15ml (x2)<br>盒裝精油擴香木 烏金木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">42</td>
+        <td>余佩勳</td>
+        <td>peihsun808@gmail.com</td>
+        <td class="money">21230.00</td>
+        <td class="items">愛情靈鑰 魔杖油 10ml (x2)<br>愛情靈鑰 魔杖精油 10ml (x15)</td>
+    </tr>
+    
+    <tr>
+        <td class="">43</td>
+        <td>陳淨瑀</td>
+        <td>u3614134@gmail.com</td>
+        <td class="money">20389.00</td>
+        <td class="items">【B.財運旺旺組】2025超強組合！黃金能量 × 香氣加乘，財運旺旺一整年｜限量30組 (x1)<br>身體按摩油（無香） 250ml (x1)<br>貝殼精油 15ml (x1)<br>義大利檸檬精油 15ml (x1)<br>香水級酒精500ml (x2)<br>費洛蒙的世界® 尊爵版 GPX 職場社交配方 亞洲傳奇愛情神香 10ml (x1)<br>黃金能量香霧 16ml - 淘金概念香款 (x1)<br>印度SPA香氛沐浴鹽 紗麗親親 (x1)<br>月老姻緣香水 35ml 正桃花好人緣 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)<br>守護結界 魔法精油 10ml - 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">44</td>
+        <td>高玉汶</td>
+        <td>anniekaoqq@gmail.com</td>
+        <td class="money">19810.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x2)<br>美好的一天 魔法精油 10ml 正能量喜悅 (x1)<br>大旺運喜氣 魔法精油香水 20ml – 開運強運 (x1)<br>神氣活現 魔法精油 10ml - 自信心積極 (x1)<br>獨角獸 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">45</td>
+        <td>郭逸羚</td>
+        <td>girlnice77@gmail.com</td>
+        <td class="money">19786.00</td>
+        <td class="items">靈鳥森林 魔杖油 10ml - 靈性進化 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">46</td>
+        <td>蔡姵萱</td>
+        <td>a0918768516@gmail.com</td>
+        <td class="money">19785.00</td>
+        <td class="items">尊爵版 GPX-M 黃金費洛蒙香水-男用 10ml (x1)<br>尊爵版 GPX-W 黃金費洛蒙香水-女用 10ml (x1)<br>盒裝精油擴香木 櫻桃木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">47</td>
+        <td>郭惠貞</td>
+        <td>amena3431319@gmail.com</td>
+        <td class="money">19747.00</td>
+        <td class="items">守護結界 魔杖油 10ml (x1)<br>印度乳香精油 15ml (x1)<br>鈔能量💰開運鈔票香包【10入】加贈黃金香霧10ml (x1)<br>洞悉大師精油香水 20ml (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)<br>黃盾伏衛精油酒精噴霧 – 第二重保護力 500ml – 買大送小 (x2)<br>大旺運喜氣 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">48</td>
+        <td>Yvonne</td>
+        <td>yvonneho@marsgroup.ltd</td>
+        <td class="money">19222.00</td>
+        <td class="items">蘋果花香氛精油 5ml (x1)<br>厄瓜多爾秘魯聖木精油 15ml (x1)<br>真正薰衣草精油 15ml (x1)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>晚香玉精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">49</td>
+        <td>淑如</td>
+        <td>sumensa1115@yahoo.com.tw</td>
+        <td class="money">18749.00</td>
+        <td class="items">調香師的最愛！調香材料工具包 (x5)</td>
+    </tr>
+    
+    <tr>
+        <td class="">50</td>
+        <td>鄧婷尹</td>
+        <td>tyin0815@gmail.com</td>
+        <td class="money">18548.00</td>
+        <td class="items">費洛蒙的世界® 尊爵版 GPX 女士配方 亞洲愛情神香 10ml (x1)<br>費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)<br>月老姻緣香水 35ml 正桃花好人緣 (x1)<br>孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)<br>費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x1)<br>月老姻緣香水 20ml - 正桃花好人緣 (x1)<br>黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>費洛蒙的世界® 隱形香息SPX-S職場社交配方 極高濃度原液 無香味 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">51</td>
+        <td>乃華</td>
+        <td>k301432@gmail.com</td>
+        <td class="money">18260.00</td>
+        <td class="items">八字命理精油木盒套組 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">52</td>
+        <td>蔡小絹</td>
+        <td>shiau_jiuan@hotmail.com</td>
+        <td class="money">17531.00</td>
+        <td class="items">紫盾靜好 精油酒精噴霧 – 第六重安定力 100ml (x1)<br>圓形柴堆精油擴香木：黑桃木（本商品不含貼紙） (x1)<br>義大利檸檬精油 15ml (x1)<br>企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)<br>特別受歡迎 魔法精油 10ml - 好人緣 (x1)<br>平安淨化複芳純露 100ml (x1)<br>守護結界 魔法精油 10ml - 驅邪鎮煞 (x1)<br>【贈品】香金開運小香瓶 (不累計) (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">53</td>
+        <td>Ng man yin</td>
+        <td>lovemeow777@gmail.com</td>
+        <td class="money">17121.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">54</td>
+        <td>vanessa</td>
+        <td>vanessac2404@yahoo.com.hk</td>
+        <td class="money">16319.00</td>
+        <td class="items">客戶下單專區：寶文 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">55</td>
+        <td>陳靜華</td>
+        <td>gogo5879@gmail.com</td>
+        <td class="money">15923.00</td>
+        <td class="items">澳洲檀香精油 5ml (x1)<br>美國雪松精油（香柏木）15ml (x5)<br>義大利佛手柑精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">56</td>
+        <td>李茲穎</td>
+        <td>ziying@tmail.ilc.edu.tw</td>
+        <td class="money">15411.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)<br>費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x1)<br>【贈品】Nesti 義大利花精皂 優雅奢華系列 (x1)<br>法式情慾香水身體乳 奶油黑醋栗 (x1)<br>費洛蒙的世界® 激情愛神PCC女士專用愛情CODING (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">57</td>
+        <td>陳珮慈</td>
+        <td>chenbess1987@icloud.com</td>
+        <td class="money">15326.00</td>
+        <td class="items">月老姻緣香水 100ml 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">58</td>
+        <td>林品希</td>
+        <td>highvaluemuse@gmail.com</td>
+        <td class="money">15026.00</td>
+        <td class="items">47.使壞維納斯－誘惑、挑逗、回頭率（女香）12ml (x19)</td>
+    </tr>
+    
+    <tr>
+        <td class="">59</td>
+        <td>陳廷瑜</td>
+        <td>rich.rich168@hotmail.com</td>
+        <td class="money">15015.00</td>
+        <td class="items">法式情慾香水身體乳 經典白麝香 (x1)<br>【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)<br>【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)<br>鈔能量開運 鈔票香包【10入】送黃金香霧 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">60</td>
+        <td>vanessa cheung</td>
+        <td>vanessac2404@yahoo.com.hk</td>
+        <td class="money">14635.00</td>
+        <td class="items">厄瓜多爾秘魯聖木精油 15ml (x2)<br>貝殼精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">61</td>
+        <td>雨祺</td>
+        <td>wendy.hsiao@hotmail.com</td>
+        <td class="money">14632.00</td>
+        <td class="items">客製化香氛：能量防護光環 60ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">62</td>
+        <td>NG YUET HOI</td>
+        <td>kt10311990@yahoo.com.hk</td>
+        <td class="money">14178.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-S 職場社交配方 極高濃度原液 無香味 (x1)<br>費洛蒙的世界®超值禮盒組 郎有情經典香引-男同志 O (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">63</td>
+        <td>林怡芳</td>
+        <td>annsui2005@yahoo.com.tw</td>
+        <td class="money">13505.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x1)<br>黃金能量精油 5ml 古老豐盛祕方 (x1)<br>【買一送一】GPX 高濃度黃金費洛蒙-女士配方10ml 送 5ml (x1)<br>61.淘氣丘比特－曖昧、暗示、吸引（中性香水）12ml (x1)<br>47.使壞維納斯－誘惑、挑逗、回頭率（女香）12ml (x1)<br>黃金能量精油 5ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">64</td>
+        <td>傅嘉軒</td>
+        <td>fushushting9@gmail.com</td>
+        <td class="money">13067.00</td>
+        <td class="items">【推薦女神香83折】費洛蒙的世界®信息素 急速引誘SSPA女士配方 熟齡男女精彩人生 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">65</td>
+        <td>郭玫君</td>
+        <td>maple07leave@gmail.com</td>
+        <td class="money">12945.00</td>
+        <td class="items">守護結界 精油香水 35ml 特殊防護磁場干擾 (x1)<br>印度羅勒精油 15ml (x1)<br>印度乳香精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">66</td>
+        <td>Chong Maggie</td>
+        <td>iammaggiechong@gmail.com</td>
+        <td class="money">12800.00</td>
+        <td class="items">Kdca韓國調香師資證照班 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">67</td>
+        <td>陳品均</td>
+        <td>css92829@gmail.com</td>
+        <td class="money">12774.00</td>
+        <td class="items">芙蓉精油 15ml (x2)<br>費洛蒙的世界® 旗艦版 SPX-S 職場社交配方 極高濃度原液 無香味 (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">68</td>
+        <td>林家鳳</td>
+        <td>vanessa760822@gmail.com</td>
+        <td class="money">12722.00</td>
+        <td class="items">費洛蒙的世界® 隱形香息SPX-W女士配方 極高濃度原液 無香味 (x1)<br>47.使壞維納斯－誘惑、挑逗、回頭率（女香）12ml (x1)<br>愛情靈鑰 魔法精油香水 20ml – 吸引愛情 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">69</td>
+        <td>蔡莛萱</td>
+        <td>jh42422002@yahoo.com.tw</td>
+        <td class="money">12712.00</td>
+        <td class="items">北美神聖白鼠尾草 15ml (x1)<br>玉檀花精油 15ml (x1)<br>西班牙兔子草精油 (馬鞭草) 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">70</td>
+        <td>林秀玲</td>
+        <td>kserling2868@gmail.com</td>
+        <td class="money">12700.00</td>
+        <td class="items">韓國KDCA一日調香師資證照班（線上課程+含整套材料包） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">71</td>
+        <td>蘇筱涵</td>
+        <td>a0918981827@gmail.com</td>
+        <td class="money">12688.00</td>
+        <td class="items">企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)<br>夢遊仙境 魔法精油 10ml 一覺好眠 (x1)<br>地中海苦橙精油 15ml (x1)<br>守護結界 魔法精油香水 20ml – 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">72</td>
+        <td>楊雅惠</td>
+        <td>r04290857@gmail.com</td>
+        <td class="money">12620.00</td>
+        <td class="items">黃金能量香霧 16ml (x5)</td>
+    </tr>
+    
+    <tr>
+        <td class="">73</td>
+        <td>袁献睿</td>
+        <td>andy.hj.yuan@gmail.com</td>
+        <td class="money">12153.00</td>
+        <td class="items">費洛蒙的世界® 尊爵版 GPX 男同志配方 亞洲傳奇愛情神香 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">74</td>
+        <td>陳静如</td>
+        <td>cyq1478@gmail.com</td>
+        <td class="money">12147.00</td>
+        <td class="items">企鵝噴噴 身體涼感噴霧 100ml (x6)<br>超級防禦精油三重奏 ☆嚴峻期間☆全民優惠組合 (x1)<br>洞悉大師精油 10ml - 意識感知 (x1)<br>法國百里香精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">75</td>
+        <td>王薇筑</td>
+        <td>j7064cookies@gmail.com</td>
+        <td class="money">12046.00</td>
+        <td class="items">正氣師場域純露 100ml 化煞防小人 (x2)<br>Aso酵素錠 小罐裝360錠 (x1)<br>【買三送三】超級防禦精油三重奏 送 精油酒精噴霧三重奏 (x1)<br>綠盾暢氣精油 - 第一重淨化力 10ml - 空氣清新＆蚊蟲叮咬 (x5)<br>紅盾禦守精油酒精噴霧 - 第三重防禦力 100ml - 高度警戒＆減少空氣中傳播物 (x5)<br>鈔能量💰開運鈔票香包【10入】送黃金香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">76</td>
+        <td>陳垣蓉</td>
+        <td>e60526@gmail.com</td>
+        <td class="money">11995.00</td>
+        <td class="items">【獨角獸】空間調頻精油噴霧 35ml｜顯化與創造力 (x1)<br>美好的一天 魔法精油 10ml 正能量喜悅 (x1)<br>真正薰衣草精油 15ml (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">77</td>
+        <td>Ya-Li</td>
+        <td>kellyplanningtw@gmail.com</td>
+        <td class="money">11920.00</td>
+        <td class="items">韓國KDCA一日調香師資證照班（線上課程+含整套材料包） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">78</td>
+        <td>許丞嘉</td>
+        <td>r122693675@gmail.com</td>
+        <td class="money">11870.00</td>
+        <td class="items">費洛蒙的世界® 隱形香息SPX-M男士配方 極高濃度原液 無香味 (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">79</td>
+        <td>張政祐</td>
+        <td>jerrychang1688@gmail.com</td>
+        <td class="money">11870.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">80</td>
+        <td>李沚芸</td>
+        <td>lizeyun.lovewedding@gmail.com</td>
+        <td class="money">11780.00</td>
+        <td class="items">義大利檸檬精油 15ml (x3)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)<br>墨西哥甜橙精油 15ml (x2)<br>綠花白千層精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">81</td>
+        <td>洪惠菁</td>
+        <td>yu931016@gmail.com</td>
+        <td class="money">11707.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x1)<br>41.月老神隊友－成就、戀愛、穩交（中性香水）12ml (x2)<br>6666財源滾滾套組，新的一年，讓全家人一整年運勢亨通 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">82</td>
+        <td>献睿</td>
+        <td>andy.hj.yuan@gmail.com</td>
+        <td class="money">11496.00</td>
+        <td class="items">聖誕奇蹟 精油香氛噴霧 60ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">83</td>
+        <td>陳怡瑀</td>
+        <td>emina94513@gmail.com</td>
+        <td class="money">11374.00</td>
+        <td class="items">守護結界 魔法精油 10ml (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)<br>安靜的烏鴉 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">84</td>
+        <td>謝筱翎</td>
+        <td>cythia0805@gmail.com</td>
+        <td class="money">11288.00</td>
+        <td class="items">黃金能量精油 5ml 古老豐盛祕方 (x1)<br>黃金能量香霧 16ml - 淘金概念香款 (x2)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">85</td>
+        <td>陳淨瑀</td>
+        <td>emina94513@gmail.com</td>
+        <td class="money">11180.00</td>
+        <td class="items">黃金能量香霧 16ml (x1)<br>Moon old's 月老姻緣香水 50ml (x2)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">86</td>
+        <td>周君嬑</td>
+        <td>nyo_eoo_hldh@yahoo.com.tw</td>
+        <td class="money">11069.00</td>
+        <td class="items">【買一送一】GPX 高濃度黃金費洛蒙-女士配方10ml 送 5ml (x1)<br>月老姻緣香水 100ml - 正桃花好人緣 (x1)<br>Moon old's 月老姻緣香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">87</td>
+        <td>陳炫宇</td>
+        <td>kkaugusttan@gmail.com</td>
+        <td class="money">11055.00</td>
+        <td class="items">【買一送一】SPX-M 旗艦版 高濃度東方費洛蒙原液-男用 20ml 送 5ml (x1)<br>【贈品】月老神隊友 費洛蒙香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">88</td>
+        <td>吳雨芯</td>
+        <td>elisemomo@yahoo.com.tw</td>
+        <td class="money">10992.00</td>
+        <td class="items">月老姻緣香水 100ml - 正桃花好人緣 (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">89</td>
+        <td>管廷珍</td>
+        <td>cathyk0811@gmail.com</td>
+        <td class="money">10910.00</td>
+        <td class="items">典藏松果精油擴香木：黑桃木 (x2)<br>純植物性3合1基底油（按摩油）1000ml (x1)<br>正氣師場域精油 10ml-化煞＆防小人 (x1)<br>守護結界 魔杖油 10ml (x2)<br>正氣師場域複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">90</td>
+        <td>蔡姵萱</td>
+        <td>sophueisme0516@yahoo.com.tw</td>
+        <td class="money">10900.00</td>
+        <td class="items">Nesti 義大利花精皂 尊寵黑金皂250g (x2)<br>黃金能量香霧 3ml - 幸運神香降臨 (x1)<br>法式情慾香水身體乳 英國梨小蒼蘭 (x1)<br>純植物性3合1基底油（按摩油）500ml (x1)<br>晶透保濕身體水凝露（微淡香） 250ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">91</td>
+        <td>張迺秉</td>
+        <td>morgan.chnp@gmail.com</td>
+        <td class="money">10570.00</td>
+        <td class="items">費洛蒙的世界® 高濃度激素MORE女士配方 愛情的荷爾蒙  無香味 (x1)<br>SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">92</td>
+        <td>洪旻儀</td>
+        <td>carolmingyi@gmail.com</td>
+        <td class="money">10296.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)<br>【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">93</td>
+        <td>蔡靜茹</td>
+        <td>carrot0421tsai@gmail.com</td>
+        <td class="money">10219.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 35ml 開運招財 (x3)<br>黃盾伏衛精油酒精噴霧 - 第二重保護力 100ml - 空氣淨化＆除臭殺菌 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">94</td>
+        <td>徐珮琳</td>
+        <td>anna61250@gmail.com</td>
+        <td class="money">10190.00</td>
+        <td class="items">荷蘭風信子精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">95</td>
+        <td>謝藝彤</td>
+        <td>yitung0822@gmail.com</td>
+        <td class="money">10031.00</td>
+        <td class="items">6666財源滾滾套組，新的一年，讓全家人一整年運勢亨通 (x1)<br>五顆星 ★★★★★ 開運套組 Five Star Lucky Set (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">96</td>
+        <td>郭芃禎</td>
+        <td>amena3431319@gmail.com</td>
+        <td class="money">9824.00</td>
+        <td class="items">正氣師場域純露 100ml 化煞防小人 (x1)<br>墨西哥甜橙精油 15ml (x2)<br>克里米亞玫瑰精油 15ml (x1)<br>海藿香精油 (廣藿香) 15ml (x1)<br>財富金鑰 魔法精油 10ml 金錢磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">97</td>
+        <td>李宥湘</td>
+        <td>moritur.06@gmail.com</td>
+        <td class="money">9818.00</td>
+        <td class="items">財富金鑰 魔法精油香水 35ml 金錢磁場 (x2)<br>平安淨化複芳純露 100ml (x1)<br>財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">98</td>
+        <td>Yu mei bo</td>
+        <td>maybo33688@gmail.com</td>
+        <td class="money">9664.00</td>
+        <td class="items">財富金鑰 魔法精油香水 35ml 金錢磁場 (x1)<br>澳洲玉果精油 (肉荳蔻) 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">99</td>
+        <td>林芊亞</td>
+        <td>0915736071miller@gmail.com</td>
+        <td class="money">9627.00</td>
+        <td class="items">47.使壞維納斯－誘惑、挑逗、回頭率（女香）12ml (x7)<br>CPX-VS 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">100</td>
+        <td>陳怡蒨</td>
+        <td>u3614134@gmail.com</td>
+        <td class="money">9290.00</td>
+        <td class="items">孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)<br>印度野生紅沒藥精油（液狀）5ml (x1)<br>靈鳥森林 魔法精油香水 20ml - 靈性進化 (x2)<br>純植物性3合1基底油（按摩油）500ml (x1)<br>【贈品】香金開運小香瓶 (不累計) (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">101</td>
+        <td>潘虹如</td>
+        <td>jojo720310@yahoo.com.tw</td>
+        <td class="money">9228.00</td>
+        <td class="items">義大利檸檬精油 15ml (x1)<br>法國杜松漿果精油 15ml (x1)<br>法國絲柏精油 15ml (x2)<br>真正薰衣草精油 15ml (x1)<br>法國迷迭香精油 15ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">102</td>
+        <td>麗珠</td>
+        <td>carrielynn_lin@hotmail.com</td>
+        <td class="money">8927.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【3入】加贈黃金香霧3ml (x2)<br>財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)<br>夢遊仙境 魔法精油香水 20ml – 一覺好眠 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">103</td>
+        <td>佳樺</td>
+        <td>joy78717@yahoo.com.tw</td>
+        <td class="money">8908.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)<br>費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">104</td>
+        <td>吳凰郡</td>
+        <td>miminewtaipeicity@gmail.com</td>
+        <td class="money">8866.00</td>
+        <td class="items">Nesti 義大利花精皂 托斯卡尼風情畫系列-鄉村修道院皂 250g (x1)<br>靈鳥森林 魔法精油 10ml 靈性覺醒 (x1)<br>鈔能量💰開運鈔票香包 年度開運大法寶 (x1)<br>印度乳香精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">105</td>
+        <td>江念慈</td>
+        <td>lovekyu501@gmail.com</td>
+        <td class="money">8498.00</td>
+        <td class="items">美國留蘭香精油 (綠薄荷) 15ml (x1)<br>黃金能量香霧 3ml - 幸運神香降臨 (x1)<br>鈔能量💰開運鈔票香包【3入】加贈黃金香霧3ml (x3)<br>圓形柴堆精油擴香木：黑桃木（本商品不含貼紙） (x1)<br>典藏松果精油擴香木：黑桃木 (x1)<br>印度檸檬香茅精油 15ml (x1)<br>波斯安息香精油（膠狀）5ml (x1)<br>企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)<br>孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)<br>企鵝噴噴 身體涼感噴霧 100ml (x1)<br>盒裝精油擴香木 胡桃木 (x1)<br>印度乳香精油 15ml (x1)<br>純植物性3合1基底油（按摩油） 250ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">106</td>
+        <td>陳莞言</td>
+        <td>claire10125@gmail.com</td>
+        <td class="money">8329.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">107</td>
+        <td>蔡逢珈</td>
+        <td>ronajojo@hotmail.com</td>
+        <td class="money">8165.00</td>
+        <td class="items">潑天富貴組【C組合】贈送琉璃元寶聚寶盆 (x1)<br>費洛蒙的世界® 尊爵版 GPX 職場社交配方 亞洲傳奇愛情神香 10ml (x1)<br>費洛蒙的世界®法式情慾香水身體乳 奶油黑醋栗 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">108</td>
+        <td>顏宏珊</td>
+        <td>fxyen2019@gmail.com</td>
+        <td class="money">8103.00</td>
+        <td class="items">靈鳥森林 魔法精油香水 35ml 靈性覺醒 (x1)<br>費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">109</td>
+        <td>嚴楚元</td>
+        <td>ycy620703@gmail.com</td>
+        <td class="money">7911.00</td>
+        <td class="items">黃金能量香霧 3ml - 幸運神香降臨 (x13)<br>愛情靈鑰 魔法精油香水 20ml – 吸引愛情 (x1)<br>黃金能量香霧 16ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">110</td>
+        <td>Elaine</td>
+        <td>elaine_liny@hotmail.com</td>
+        <td class="money">7866.00</td>
+        <td class="items">平安淨化複芳純露 100ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">111</td>
+        <td>謝綉媚</td>
+        <td>b0929802370@gmail.com</td>
+        <td class="money">7841.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">112</td>
+        <td>曾翊雯</td>
+        <td>anne126123@yahoo.com.tw</td>
+        <td class="money">7840.00</td>
+        <td class="items">SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">113</td>
+        <td>黃雅惠</td>
+        <td>a0927004887@gmail.com</td>
+        <td class="money">7780.00</td>
+        <td class="items">正氣師場域純露 100ml 化煞防小人 (x1)<br>橘盾肌享精油 - 第四重舒展力 10ml (x1)<br>企鵝噴噴 身體涼感噴霧 100ml (x2)<br>【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x1)<br>黃金能量香霧 3ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">114</td>
+        <td>王椽茗</td>
+        <td>richard760904@gmail.com</td>
+        <td class="money">7477.00</td>
+        <td class="items">特別受歡迎 魔法精油 10ml 人緣加持 (x2)<br>財富金鑰 魔法精油香水 35ml 金錢磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">115</td>
+        <td>哲瑜</td>
+        <td>a11931a@gmail.com</td>
+        <td class="money">7462.00</td>
+        <td class="items">調香師的最愛！調香材料工具包 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">116</td>
+        <td>Chotung Yip</td>
+        <td>tung_11042000@yahoo.com.hk</td>
+        <td class="money">7339.00</td>
+        <td class="items">摩洛哥玫瑰精油 (原精) 5ml (x1)<br>美好的一天 精油香水 35ml 正能量喜悅 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">117</td>
+        <td>楊巧筠</td>
+        <td>cyyang2010@gmail.com</td>
+        <td class="money">7320.00</td>
+        <td class="items">財富金鑰 魔法精油香水 35ml 金錢磁場 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">118</td>
+        <td>賴怡文</td>
+        <td>eveneva96@gmail.com</td>
+        <td class="money">7294.00</td>
+        <td class="items">白樟樹精油 15ml (x1)<br>黃金能量精油 5ml 古老豐盛祕方 (x1)<br>神秘漂浮島 魔法精油香水 35ml 開發第六感 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">119</td>
+        <td>湯佳天</td>
+        <td>kimitangtw@gmail.com</td>
+        <td class="money">7282.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)<br>費洛蒙的世界® 隱形香息SPX-M男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">120</td>
+        <td>章詩敏</td>
+        <td>toilet.lycoris@gmail.com</td>
+        <td class="money">7261.00</td>
+        <td class="items">琥珀香氛精油15ml (x1)<br>澳洲玉果精油 (肉荳蔻) 5ml (x1)<br>粉葡萄柚精油 15ml (x1)<br>克里米亞玫瑰精油 15ml (x1)<br>印度乳香精油 15ml (x1)<br>波斯安息香精油（膠狀）5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">121</td>
+        <td>余塏賢</td>
+        <td>kugaxian@gmail.com</td>
+        <td class="money">7040.00</td>
+        <td class="items">【滿額3500元贈品】媽媽咪呀 特調精油香水 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">122</td>
+        <td>張助愷</td>
+        <td>renjier0516@yahoo.com.tw</td>
+        <td class="money">6972.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-G 男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">123</td>
+        <td>芯聿Flora</td>
+        <td>a0938082012@gmail.com</td>
+        <td class="money">6959.00</td>
+        <td class="items">印度杜松葉精油 15ml (x1)<br>地中海芫荽精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">124</td>
+        <td>逸彤</td>
+        <td>skimp0803@gmail.com</td>
+        <td class="money">6865.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-L 女同志配方 極高濃度原液 無香味 (x1)<br>41.月老神隊友－成就、戀愛、穩交（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">125</td>
+        <td>魯郁彤</td>
+        <td>lmck0323@yahoo.com.tw</td>
+        <td class="money">6807.00</td>
+        <td class="items">費洛蒙的世界®高濃度黃金GPX女士配方 亞洲傳奇愛情神香 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">126</td>
+        <td>邱憶萱</td>
+        <td>nepal790410@hotmail.com</td>
+        <td class="money">6712.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">127</td>
+        <td>楊沛芸</td>
+        <td>d0952200635@gmail.com</td>
+        <td class="money">6700.00</td>
+        <td class="items">真正薰衣草精油 15ml (x1)<br>純植物性3合1基底油（按摩油） 250ml (x7)<br>【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">128</td>
+        <td>謝雨璇</td>
+        <td>inshan623@gmail.com</td>
+        <td class="money">6669.00</td>
+        <td class="items">孵夢精靈 魔法精油香水 35ml 造夢工匠師 (x1)<br>逐夢騎士 試香體驗瓶 2ml 限購1瓶 (x1)<br>孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">129</td>
+        <td>劉怡君</td>
+        <td>alnice917@gmail.com</td>
+        <td class="money">6666.00</td>
+        <td class="items">6666財源滾滾套組 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">130</td>
+        <td>何娟娟</td>
+        <td>beverly228@gmail.com</td>
+        <td class="money">6627.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">131</td>
+        <td>耀傑</td>
+        <td>kisslovejust1@gmail.com</td>
+        <td class="money">6570.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-G 男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">132</td>
+        <td>張景雅</td>
+        <td>beaty0819@gmail.com</td>
+        <td class="money">6567.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-VS 女士配方 美人經典香引 10ml (x1)<br>費洛蒙的世界® 16.伽摩Come on 催情魅惑中性香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">133</td>
+        <td>周沛如</td>
+        <td>b88406019@ntu.edu.tw</td>
+        <td class="money">6416.00</td>
+        <td class="items">費洛蒙的世界® 16.伽摩Come on 催情魅惑中性香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">134</td>
+        <td>范伃文</td>
+        <td>vivifan811@gmail.com</td>
+        <td class="money">6346.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">135</td>
+        <td>沈梅桂</td>
+        <td>hugh0613@gmail.com</td>
+        <td class="money">6344.00</td>
+        <td class="items">法式情慾香水身體乳 經典白麝香 (x1)<br>費洛蒙的世界® 理想情人朵夏亞 女仕配方模範生戀人 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">136</td>
+        <td>蘇俊宇</td>
+        <td>chunyu7135@gmail.com</td>
+        <td class="money">6266.00</td>
+        <td class="items">費洛蒙的世界® 16.伽摩 Come on 催情魅惑中性香 12ml (x1)<br>費洛蒙的世界® 典藏版 限定禮盒組 男同志配方 O (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">137</td>
+        <td>盧南州</td>
+        <td>taiwan.nanchou@gmail.com</td>
+        <td class="money">6262.00</td>
+        <td class="items">費洛蒙的世界® 76.情聖安格斯 迷戀勾引男香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">138</td>
+        <td>梁博凱</td>
+        <td>a6973923@gmail.com</td>
+        <td class="money">6082.00</td>
+        <td class="items">費洛蒙的世界® 隱形香息SPX-M男士配方 極高濃度原液 無香味 (x1)<br>67.厄洛斯宣言－獵艷、佔有、宣示主權（男香）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">139</td>
+        <td>陳玫君</td>
+        <td>csyerica@gmail.com</td>
+        <td class="money">5912.00</td>
+        <td class="items">貓頭鷹守護神 魔法精油香水 35ml 保護磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">140</td>
+        <td>WENG TONG HO</td>
+        <td>cindywengtong@gmail.com</td>
+        <td class="money">5908.00</td>
+        <td class="items">【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">141</td>
+        <td>溫桂香</td>
+        <td>jk59375@yahoo.com.tw</td>
+        <td class="money">5872.00</td>
+        <td class="items">特別受歡迎 魔杖油 10ml (x1)<br>愛情靈鑰 魔杖精油 10ml ( 贈品 ) (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">142</td>
+        <td>高聿姍</td>
+        <td>sherry19920707@gmail.com</td>
+        <td class="money">5840.00</td>
+        <td class="items">調香師的最愛！調香材料工具包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">143</td>
+        <td>游阡榕</td>
+        <td>mayayu77@gmail.com</td>
+        <td class="money">5834.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)<br>【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">144</td>
+        <td>王佳玲</td>
+        <td>wklfks@yahoo.com.tw</td>
+        <td class="money">5809.00</td>
+        <td class="items">費洛蒙的世界® 秘密愛神APC社交配方愛情CODING (x1)<br>【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x1)<br>貓頭鷹守護神 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">145</td>
+        <td>廖尉琁</td>
+        <td>icvivi@hitmail.com</td>
+        <td class="money">5795.00</td>
+        <td class="items">黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)<br>月老姻緣香水 100ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">146</td>
+        <td>趙皎光</td>
+        <td>chiaokuang@gmail.com</td>
+        <td class="money">5780.00</td>
+        <td class="items">安靜的烏鴉 魔法精油 10ml 終結精神內耗 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">147</td>
+        <td>林宸君</td>
+        <td>q500117@yahoo.com.tw</td>
+        <td class="money">5779.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">148</td>
+        <td>謝依伶</td>
+        <td>a0983198388@gmail.com</td>
+        <td class="money">5727.00</td>
+        <td class="items">沉思岩 魔法精油香水 20ml – 思考與閱讀 (x1)<br>美好的一天 魔法精油香水 20ml – 正能量喜悅 (x1)<br>夢遊仙境 魔法精油香水 20ml – 一覺好眠 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">149</td>
+        <td>圓圓</td>
+        <td>a0918321101@gmail.com</td>
+        <td class="money">5658.00</td>
+        <td class="items">客戶下單專區：元元 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">150</td>
+        <td>石語軒</td>
+        <td>monkeyfirst1022@gmail.com</td>
+        <td class="money">5588.00</td>
+        <td class="items">費洛蒙的世界® 典藏版 限定禮盒組 男同志配方 I (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">151</td>
+        <td>黎漢軒</td>
+        <td>morgan50169@yahoo.com.tw</td>
+        <td class="money">5588.00</td>
+        <td class="items">費洛蒙的世界® 典藏版 限定禮盒組 男士配方 HY (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">152</td>
+        <td>黃郁湘</td>
+        <td>ginkgowind@yahoo.com.tw</td>
+        <td class="money">5588.00</td>
+        <td class="items">黃金能量香霧 10ml - 財富的鑰匙 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">153</td>
+        <td>陳瑩緹</td>
+        <td>y8732156@hotmail.com.tw</td>
+        <td class="money">5583.00</td>
+        <td class="items">貓頭鷹守護神 魔法精油香水 20ml – 保護磁場 (x1)<br>盒裝精油擴香木 金絲柚木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">154</td>
+        <td>高文卿</td>
+        <td>vicky840024@gmail.com</td>
+        <td class="money">5552.00</td>
+        <td class="items">純植物性3合1基底油（按摩油）500ml (x1)<br>皇家薰衣草精油 15ml (x1)<br>印度歐白芷根精油 5ml (x1)<br>中國雪松精油 15ml (x1)<br>墨西哥甜橙精油 15ml (x1)<br>真正薰衣草精油 15ml (x1)<br>沉思岩 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">155</td>
+        <td>林小艾(Mirah.Mayra)</td>
+        <td>elintc@gmail.com</td>
+        <td class="money">5529.00</td>
+        <td class="items">芙蓉精油 15ml (x1)<br>夜花茉莉 (珊瑚茉莉) 精油 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">156</td>
+        <td>黎思吟</td>
+        <td>star991012@gmail.com</td>
+        <td class="money">5470.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">157</td>
+        <td>盧鏡如</td>
+        <td>l265985@yahoo.com.tw</td>
+        <td class="money">5454.00</td>
+        <td class="items">Nesti 義大利花精皂 尊寵黑金皂250g (x1)<br>Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">158</td>
+        <td>Fiona</td>
+        <td>fionatweetyhome@yahoo.com</td>
+        <td class="money">5422.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x4)</td>
+    </tr>
+    
+    <tr>
+        <td class="">159</td>
+        <td>梁雅雯</td>
+        <td>aaeeffe@yahoo.com.tw</td>
+        <td class="money">5290.00</td>
+        <td class="items">香水級酒精500ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">160</td>
+        <td>沈玉芬</td>
+        <td>emina94513@gmail.com</td>
+        <td class="money">5280.00</td>
+        <td class="items">黃金能量精油 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">161</td>
+        <td>蔡宜靜</td>
+        <td>yiching931@gmail.com</td>
+        <td class="money">5253.00</td>
+        <td class="items">墨西哥甜橙精油 15ml (x1)<br>【超實用DIY調香工具組】香水級酒精+香水空瓶+調香工具 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">162</td>
+        <td>張家銘</td>
+        <td>dennislp6937@gmail.com</td>
+        <td class="money">5238.00</td>
+        <td class="items">費洛蒙的世界® 41.月老神隊友 戀愛穩交中性香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">163</td>
+        <td>林思妤</td>
+        <td>silvielinlin@gmail.com</td>
+        <td class="money">5198.00</td>
+        <td class="items">神聖箴言精油 10ml 高我頻率接軌 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">164</td>
+        <td>李芝如</td>
+        <td>dolphinnina@gmail.com</td>
+        <td class="money">5164.00</td>
+        <td class="items">義大利佛手柑精油 15ml (x1)<br>大旺運喜氣 魔法精油香水 20ml – 開運強運 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">165</td>
+        <td>鄭慧如</td>
+        <td>cheng0958@gmail.com</td>
+        <td class="money">5145.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x2)<br>鈔能量💰開運鈔票香包【3入】加贈黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">166</td>
+        <td>黃麗君Claire</td>
+        <td>clairehuang1105@gmail.com</td>
+        <td class="money">5080.00</td>
+        <td class="items">【超實用DIY調香工具組】香水級酒精+香水空瓶+調香工具 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">167</td>
+        <td>呂婉琴</td>
+        <td>mailtomy168@yahoo.com.tw</td>
+        <td class="money">5060.00</td>
+        <td class="items">法國橙花精油 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">168</td>
+        <td>范芸葳</td>
+        <td>fananita@gmail.com</td>
+        <td class="money">5053.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)<br>黃金能量香霧 10ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">169</td>
+        <td>周珍珍</td>
+        <td>angeljen_momo@yahoo.com.tw</td>
+        <td class="money">4983.00</td>
+        <td class="items">【C.潑天富貴組】2025鐵粉精選！黃金香氛，富貴加持不斷線｜限量30組 (x1)<br>黃金能量香霧 16ml - 淘金概念香款 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">170</td>
+        <td>蔡雨璇</td>
+        <td>volinmir@gmail.com</td>
+        <td class="money">4931.00</td>
+        <td class="items">【A.黃金雙霧組】2025開運必備！雙倍黃金香氣，招財旺運一次到位｜限量30組 (x1)<br>【贈品】香金開運小香瓶 (不累計) (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">171</td>
+        <td>陳家柔</td>
+        <td>emina94513@gmail.com</td>
+        <td class="money">4894.00</td>
+        <td class="items">Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">172</td>
+        <td>高至秀</td>
+        <td>emmagao819@gmail.com</td>
+        <td class="money">4858.00</td>
+        <td class="items">SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">173</td>
+        <td>黃筱涵</td>
+        <td>like7703302003@yahoo.com.tw</td>
+        <td class="money">4853.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x1)<br>超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">174</td>
+        <td>方一宇</td>
+        <td>blackcat921@gmail.com</td>
+        <td class="money">4840.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)<br>費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">175</td>
+        <td>潔如</td>
+        <td>jieru0430@gmail.com</td>
+        <td class="money">4774.00</td>
+        <td class="items">守護結界精油 10ml 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">176</td>
+        <td>邱進鵬</td>
+        <td>hn84820745@gmail.com</td>
+        <td class="money">4640.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-HY 男士配方 英雄經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">177</td>
+        <td>林季燁</td>
+        <td>sminigti5ngz@gmail.com</td>
+        <td class="money">4635.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">178</td>
+        <td>鄧琬亭</td>
+        <td>m10706005@go.utaipei.edu.com.tw</td>
+        <td class="money">4587.00</td>
+        <td class="items">法式情慾香水身體乳 英國梨小蒼蘭 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">179</td>
+        <td>黃金聖</td>
+        <td>a0986015097@gmail.com</td>
+        <td class="money">4568.00</td>
+        <td class="items">費洛蒙的世界® 尊爵版 GPX 男士配方 亞洲愛情神香 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">180</td>
+        <td>陳亮君</td>
+        <td>alva570875@gmail.com</td>
+        <td class="money">4567.00</td>
+        <td class="items">獨角獸 魔法精油香水 20ml – 顯化與創造力 (x1)<br>神秘漂浮島 魔法精油香水 20ml – 第六感靈感 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">181</td>
+        <td>江瀧泰</td>
+        <td>jesuistd1992@gmail.com</td>
+        <td class="money">4564.00</td>
+        <td class="items">費洛蒙的世界® 隱形香息SPX-M男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">182</td>
+        <td>陳冠宏</td>
+        <td>catfish.ep87@gmail.com</td>
+        <td class="money">4560.00</td>
+        <td class="items">尊爵版 GPX-M 黃金費洛蒙香水-男用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">183</td>
+        <td>許雅惠</td>
+        <td>masayahsu@hotmail.com</td>
+        <td class="money">4510.00</td>
+        <td class="items">盒裝精油擴香木 花梨木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">184</td>
+        <td>潘咨吟</td>
+        <td>vs9110@gmail.com</td>
+        <td class="money">4505.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-L 女同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">185</td>
+        <td>梁美玲</td>
+        <td>uarewawu@yahoo.com.tw</td>
+        <td class="money">4450.00</td>
+        <td class="items">初始太極精油 10ml - 初衷使命 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">186</td>
+        <td>靳芯妤</td>
+        <td>vean0927@gmail.com</td>
+        <td class="money">4441.00</td>
+        <td class="items">費洛蒙的世界® 16.伽摩 Come on 催情魅惑中性香 12ml (x1)<br>費洛蒙的世界® 41.月老神隊友 戀愛穩交中性香水 12ml (x2)<br>41.月老神隊友－成就、戀愛、穩交（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">187</td>
+        <td>陳經文</td>
+        <td>a140425@gmail.com</td>
+        <td class="money">4436.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">188</td>
+        <td>孫芷寧</td>
+        <td>geniesun2003@yahoo.com.tw</td>
+        <td class="money">4432.00</td>
+        <td class="items">安靜的烏鴉香水 試香體驗瓶 2ml (x1)<br>大旺運喜氣 魔法精油香水 35ml 開運招財 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">189</td>
+        <td>王薇筑</td>
+        <td>oceana5354@gmail.com</td>
+        <td class="money">4423.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 500ml☆買大送小☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">190</td>
+        <td>何芯怡</td>
+        <td>singnet777@gmail.com</td>
+        <td class="money">4222.00</td>
+        <td class="items">Moon old's 月老姻緣香水 50ml《買大送小》 (x1)<br>黃金能量香霧 16ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">191</td>
+        <td>Chui Bie</td>
+        <td>chuibie@yahoo.com</td>
+        <td class="money">4180.00</td>
+        <td class="items">神氣活現 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">192</td>
+        <td>高蓮華</td>
+        <td>hs80111@gmail.com</td>
+        <td class="money">4160.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-WR 社交女士配方 喜玲瓏經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">193</td>
+        <td>黃雅琴</td>
+        <td>gina0856@yahoo.com.tw</td>
+        <td class="money">4108.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">194</td>
+        <td>心怡</td>
+        <td>as895372@gmail.com</td>
+        <td class="money">4042.00</td>
+        <td class="items">守護結界 魔法精油 10ml - 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">195</td>
+        <td>嘉婕</td>
+        <td>jessie40518@gmail.com</td>
+        <td class="money">4038.00</td>
+        <td class="items">費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x1)<br>平安淨化複芳純露 100ml (x1)<br>安靜的烏鴉 魔杖油 10ml (x1)<br>神氣活現 魔法精油 10ml - 自信心積極 (x1)<br>墨西哥甜橙精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">196</td>
+        <td>高至秀</td>
+        <td>zhixiu819@gmail.com</td>
+        <td class="money">4032.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">197</td>
+        <td>粉圓</td>
+        <td>a0937302423@gmail.com</td>
+        <td class="money">4020.00</td>
+        <td class="items">墨西哥甜橙精油 15ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">198</td>
+        <td>林慧</td>
+        <td>linwhere@gmail.com</td>
+        <td class="money">4017.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">199</td>
+        <td>何詠玲</td>
+        <td>vivi811221@gmail.com</td>
+        <td class="money">4000.00</td>
+        <td class="items">香水級酒精500ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">200</td>
+        <td>王冠東</td>
+        <td>ktwang5241@yahoo.com</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">201</td>
+        <td>子翔</td>
+        <td>tzuhsiang176@gmail.com</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 隱形香息SPX-G男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">202</td>
+        <td>楊勝全</td>
+        <td>nimody@hotmail.com</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-G 男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">203</td>
+        <td>辜瑞益</td>
+        <td>wa02542600@yahoo.com.tw</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">204</td>
+        <td>余芯怡</td>
+        <td>shoushinyu@gmail.com</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">205</td>
+        <td>蔡思杰</td>
+        <td>csj1994921xb@gmail.com</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">206</td>
+        <td>熊宥菲</td>
+        <td>pokeguagua@gmail.com</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 隱形香息SPX-W女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">207</td>
+        <td>小邱</td>
+        <td>fulong198699@gmail.com</td>
+        <td class="money">3990.00</td>
+        <td class="items">費洛蒙的世界® 隱形香息 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">208</td>
+        <td>羅清</td>
+        <td>chisijai@hotmail.com</td>
+        <td class="money">3962.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-G 男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">209</td>
+        <td>張玉菁</td>
+        <td>ceeportrose@gmail.com</td>
+        <td class="money">3955.00</td>
+        <td class="items">黃金能量香霧 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">210</td>
+        <td>曾美慧</td>
+        <td>eve0916733@gmail.com</td>
+        <td class="money">3916.00</td>
+        <td class="items">費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x2)<br>費洛蒙的世界® 秘密愛神APC 女士配方 配方 愛情Coding (x1)<br>黃盾伏衛精油 - 第二重保護力 10ml - 空氣淨化＆除臭殺菌 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">211</td>
+        <td>馮媁婷</td>
+        <td>tristarong811@gmail.com</td>
+        <td class="money">3895.00</td>
+        <td class="items">獨角獸 魔法精油 10ml - 顯化與創造力 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">212</td>
+        <td>吳旻駿</td>
+        <td>wuminjun444@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">SPX-G 旗艦版 高濃度東方費洛蒙原液-男同志 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">213</td>
+        <td>張芷瑜</td>
+        <td>vivic5970@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">214</td>
+        <td>carlos</td>
+        <td>f0981170824@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">215</td>
+        <td>黃彥修</td>
+        <td>qa6410@yahoo.com.tw</td>
+        <td class="money">3890.00</td>
+        <td class="items">SPX-G 旗艦版 高濃度東方費洛蒙原液-男同志 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">216</td>
+        <td>李宗諺</td>
+        <td>flue168@msn.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">217</td>
+        <td>鄧鴻餘</td>
+        <td>frankteng521@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">218</td>
+        <td>潘海潔</td>
+        <td>loveall10107@yahoo.com.tw</td>
+        <td class="money">3890.00</td>
+        <td class="items">SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">219</td>
+        <td>簡烘平</td>
+        <td>honping6000@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">220</td>
+        <td>張偉興</td>
+        <td>manuelzhang82@hotmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">221</td>
+        <td>張惠琴</td>
+        <td>changchin917@gmIl.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">222</td>
+        <td>張瑀心</td>
+        <td>sweet63888@yahoo.com.tw</td>
+        <td class="money">3890.00</td>
+        <td class="items">SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">223</td>
+        <td>林軒志</td>
+        <td>q46852@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-G 男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">224</td>
+        <td>楊承霖</td>
+        <td>yang86124@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">225</td>
+        <td>林袁至</td>
+        <td>jupiter.arw@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-G 男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">226</td>
+        <td>林奐言</td>
+        <td>r660226r@yahoo.com.tw</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">227</td>
+        <td>周沛如</td>
+        <td>b88406019@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">【客製單】SPX-W (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">228</td>
+        <td>江怡佳</td>
+        <td>treeflower5168@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">【買一送一】SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml 送 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">229</td>
+        <td>江承燁</td>
+        <td>aalayavij@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-G 男同志配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">230</td>
+        <td>周沛如</td>
+        <td>csjharmure99@gmail.com</td>
+        <td class="money">3890.00</td>
+        <td class="items">SPX-W 旗艦版 高濃度東方費洛蒙原液-女用 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">231</td>
+        <td>尤彥鈞</td>
+        <td>aaa53015@yahoo.com.tw</td>
+        <td class="money">3890.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">232</td>
+        <td>黃淑華</td>
+        <td>rubby2888@hotmail.com</td>
+        <td class="money">3869.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">233</td>
+        <td>高玉汶</td>
+        <td>anniekaou@yahoo.com.tw</td>
+        <td class="money">3867.00</td>
+        <td class="items">正氣師場域複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">234</td>
+        <td>林姵均</td>
+        <td>emina94513@gmail.com</td>
+        <td class="money">3830.00</td>
+        <td class="items">白珠樹精油 (冬青) 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">235</td>
+        <td>趙勻梒</td>
+        <td>yunhanz985@gmail.com</td>
+        <td class="money">3800.00</td>
+        <td class="items">KDCA 精油調香師的最愛！37種純精油調香材料工具包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">236</td>
+        <td>馬之庭</td>
+        <td>28827001aa@gmail.com</td>
+        <td class="money">3800.00</td>
+        <td class="items">KDCA 精油調香師的最愛！37種純精油調香材料工具包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">237</td>
+        <td>李文玫</td>
+        <td>winniel@gm.lhu.edu.tw</td>
+        <td class="money">3800.00</td>
+        <td class="items">KDCA 精油調香師的最愛！37種純精油調香材料工具包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">238</td>
+        <td>林芸均</td>
+        <td>vh4811@yahoo.com.tw</td>
+        <td class="money">3792.00</td>
+        <td class="items">黃金能量香霧 16ml (x4)</td>
+    </tr>
+    
+    <tr>
+        <td class="">239</td>
+        <td>翁瑞萍</td>
+        <td>bella05160108@yahoo.com.tw</td>
+        <td class="money">3756.00</td>
+        <td class="items">夢遊仙境 魔杖油 10ml (x1)<br>大旺運喜氣 魔法精油 10ml - 開運強運 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">240</td>
+        <td>品諭</td>
+        <td>chend9445@gmail.com</td>
+        <td class="money">3756.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">241</td>
+        <td>盧佩宜</td>
+        <td>lu5028@mail2000.com.tw</td>
+        <td class="money">3718.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">242</td>
+        <td>陳麒安</td>
+        <td>wcsd123456@gmail.com</td>
+        <td class="money">3700.00</td>
+        <td class="items">KDCA 精油調香師的最愛！37種純精油調香材料工具包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">243</td>
+        <td>黃頂芝</td>
+        <td>buffy0511@msn.com</td>
+        <td class="money">3700.00</td>
+        <td class="items">調香師的最愛！調香材料工具包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">244</td>
+        <td>廖忠勤</td>
+        <td>jhongcin@yahoo.com.tw</td>
+        <td class="money">3694.00</td>
+        <td class="items">【贈品】香金開運小香瓶 (不累計) (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">245</td>
+        <td>張佳平</td>
+        <td>fasu0715@gmail.com</td>
+        <td class="money">3682.00</td>
+        <td class="items">夢遊仙境 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">246</td>
+        <td>王秋雲</td>
+        <td>atraglow@yahoo.com.tw</td>
+        <td class="money">3654.00</td>
+        <td class="items">61.淘氣丘比特－曖昧、暗示、吸引（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">247</td>
+        <td>劉艾鑫</td>
+        <td>icingliu@gmail.com</td>
+        <td class="money">3645.00</td>
+        <td class="items">墨西哥甜橙精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">248</td>
+        <td>陳詩嵋</td>
+        <td>smallstarstar7@gmail.com</td>
+        <td class="money">3643.00</td>
+        <td class="items">守護結界 精油香水 35ml 驅邪鎮煞 (x1)<br>【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">249</td>
+        <td>吳曉貞</td>
+        <td>ko168chen@yahoo.com.tw</td>
+        <td class="money">3620.00</td>
+        <td class="items">生生不息 魔法精油 10ml 生命力 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">250</td>
+        <td>廖睛霈</td>
+        <td>ccl01271209@gmail.com</td>
+        <td class="money">3612.00</td>
+        <td class="items">印度野生紅沒藥精油（液狀）5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">251</td>
+        <td>呂姵瑩</td>
+        <td>blueskynana123@gmail.com</td>
+        <td class="money">3600.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">252</td>
+        <td>柯建成</td>
+        <td>lmck0323@yahoo.com.tw</td>
+        <td class="money">3586.00</td>
+        <td class="items">財富金鑰 魔法精油 10ml - 金錢能量 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">253</td>
+        <td>施宛霏</td>
+        <td>sky81089@gmail.com</td>
+        <td class="money">3580.00</td>
+        <td class="items">月老姻緣香水 100ml 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">254</td>
+        <td>王雅慧</td>
+        <td>yuki00277@yahoo.com.tw</td>
+        <td class="money">3566.00</td>
+        <td class="items">【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)<br>大旺運喜氣 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">255</td>
+        <td>陳莉雯</td>
+        <td>momoko503324@gmail.com</td>
+        <td class="money">3560.00</td>
+        <td class="items">【買三送三】超級防禦精油三重奏 送 精油酒精噴霧三重奏 (x1)<br>月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">256</td>
+        <td>賴鏡旭</td>
+        <td>janet575757@gmail.com</td>
+        <td class="money">3540.00</td>
+        <td class="items">香水級酒精500ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">257</td>
+        <td>Peggy Lee</td>
+        <td>bshpeggy@gmail.com</td>
+        <td class="money">3528.00</td>
+        <td class="items">孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">258</td>
+        <td>陳雅玲</td>
+        <td>qdi48033@yahoo.com.tw</td>
+        <td class="money">3515.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x1)<br>黃金能量香霧 10ml - 古老豐盛祕方 (x1)<br>鈔能量💰開運鈔票香包【3入】 (x1)<br>鈔能量💰開運鈔票香包【3入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">259</td>
+        <td>莊偉誠</td>
+        <td>weichengchuang1975@gmail.com</td>
+        <td class="money">3500.00</td>
+        <td class="items">費洛蒙的世界®信息素 無盡的誘惑MAX男士配方 愛情優勢人生勝利 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">260</td>
+        <td>莊欣蓓</td>
+        <td>joselinchuang@gmail.com</td>
+        <td class="money">3468.00</td>
+        <td class="items">美國留蘭香精油 (綠薄荷) 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">261</td>
+        <td>孫世寯</td>
+        <td>sm6332@gmail.com</td>
+        <td class="money">3461.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x2)<br>黃金能量香霧 3ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">262</td>
+        <td>馮芝瑜</td>
+        <td>b0908946688@iclod.com</td>
+        <td class="money">3409.00</td>
+        <td class="items">非洲野生羅文莎葉精油 15ml (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">263</td>
+        <td>許音婷</td>
+        <td>inting.hsu@gmail.com</td>
+        <td class="money">3399.00</td>
+        <td class="items">【贈品】香金開運小香瓶 (不累計) (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">264</td>
+        <td>李明柔</td>
+        <td>evelynlisummer@gmail.com</td>
+        <td class="money">3365.00</td>
+        <td class="items">萬壽菊香氛精油  15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">265</td>
+        <td>靳芯妤</td>
+        <td>jasminechin0927@gmail.com</td>
+        <td class="money">3353.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)<br>黃金能量香霧 16ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">266</td>
+        <td>李若涵</td>
+        <td>ivy1230280@hotmail.com</td>
+        <td class="money">3330.00</td>
+        <td class="items">獨角獸 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">267</td>
+        <td>姵萱</td>
+        <td>a0918768516@gmail.com</td>
+        <td class="money">3314.00</td>
+        <td class="items">Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">268</td>
+        <td>緗</td>
+        <td>xvjpru@gmail.com</td>
+        <td class="money">3314.00</td>
+        <td class="items">Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">269</td>
+        <td>盧怡如</td>
+        <td>jen4ny6@gmail.com</td>
+        <td class="money">3313.00</td>
+        <td class="items">安靜的烏鴉 魔杖油 10ml (x1)<br>義大利檸檬精油 15ml (x1)<br>獨角獸 魔杖調和油 10ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">270</td>
+        <td>陳靜宜</td>
+        <td>angel74356@yahoo.com.tw</td>
+        <td class="money">3306.00</td>
+        <td class="items">安靜的烏鴉 魔法精油 10ml - 平靜思慮 (x1)<br>安靜的烏鴉 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">271</td>
+        <td>陳子庭</td>
+        <td>jocelyn80123@163.com</td>
+        <td class="money">3300.00</td>
+        <td class="items">調香實驗室37款精油 X 2毫升體驗組合包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">272</td>
+        <td>周耕宇</td>
+        <td>b3798gtaipei@gmail.com</td>
+        <td class="money">3292.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-M 男士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">273</td>
+        <td>童沛慈</td>
+        <td>lesleytung.ceo@gmail.com</td>
+        <td class="money">3292.00</td>
+        <td class="items">費洛蒙的世界® 旗艦版 SPX-W 女士配方 極高濃度原液 無香味 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">274</td>
+        <td>許伯安</td>
+        <td>dreambuilderr@hotmail.com</td>
+        <td class="money">3262.00</td>
+        <td class="items">盒裝精油擴香木 桃花芯木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">275</td>
+        <td>關瓊如</td>
+        <td>vita.kuan@gmail.com</td>
+        <td class="money">3260.00</td>
+        <td class="items">【客製單】CPX + 守衛者 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">276</td>
+        <td>林儀樺</td>
+        <td>viva_0712@yahoo.com.tw</td>
+        <td class="money">3260.00</td>
+        <td class="items">大旺運喜氣 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">277</td>
+        <td>陳凱莉</td>
+        <td>iamk930@gmail.com</td>
+        <td class="money">3228.00</td>
+        <td class="items">守護結界 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">278</td>
+        <td>李瑋庭</td>
+        <td>lawnina119@yahoo.com.tw</td>
+        <td class="money">3214.00</td>
+        <td class="items">Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">279</td>
+        <td>何芯怡</td>
+        <td>ncsncs14134@gmail.com</td>
+        <td class="money">3214.00</td>
+        <td class="items">Moon old's 月老姻緣香水 50ml《買大送小》 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">280</td>
+        <td>敏妃</td>
+        <td>curlybecky59@gmail.com</td>
+        <td class="money">3210.00</td>
+        <td class="items">紅盾禦守精油 - 第三重防禦力 10ml - 高度警戒＆減少空氣中傳播物 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">281</td>
+        <td>沈姿妤</td>
+        <td>shen0912126620@gmail.com</td>
+        <td class="money">3172.00</td>
+        <td class="items">月老姻緣香水 100ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">282</td>
+        <td>Meimi-劉宜玫</td>
+        <td>v00001111@yahoo.com.tw</td>
+        <td class="money">3170.00</td>
+        <td class="items">法式情慾香水身體乳 英國梨小蒼蘭 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">283</td>
+        <td>蔣修德</td>
+        <td>lliinnddaaj1@gmail.com</td>
+        <td class="money">3160.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">284</td>
+        <td>頌恩</td>
+        <td>sungenlin@gmail.com</td>
+        <td class="money">3160.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">285</td>
+        <td>陳怡蒨</td>
+        <td>emina94513@gmail.com</td>
+        <td class="money">3151.00</td>
+        <td class="items">純植物性3合1基底油（按摩油） 250ml (x1)<br>鈔能量💰開運鈔票香包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">286</td>
+        <td>Pank</td>
+        <td>ccchenzu@gapp.nthu.edu.tw</td>
+        <td class="money">3143.00</td>
+        <td class="items">月老姻緣香水 50ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">287</td>
+        <td>林家卉</td>
+        <td>lovemomojoyce@yahoo.com</td>
+        <td class="money">3135.00</td>
+        <td class="items">Moon old's 月老姻緣香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">288</td>
+        <td>🃏劉千慈🃏</td>
+        <td>emma550550@gmail.com</td>
+        <td class="money">3100.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">289</td>
+        <td>慧伶</td>
+        <td>kuo9020505@gmail.com</td>
+        <td class="money">3070.00</td>
+        <td class="items">法國醒目薰衣草精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">290</td>
+        <td>黃玲玲🍓</td>
+        <td>a7872831@gmail.com</td>
+        <td class="money">3006.00</td>
+        <td class="items">費洛蒙的世界® 16.伽摩Come on 催情魅惑中性香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">291</td>
+        <td>彭逸涵</td>
+        <td>yihan.penguin@gmail.com</td>
+        <td class="money">3000.00</td>
+        <td class="items">菖蒲精油 15ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">292</td>
+        <td>郭慧伶</td>
+        <td>kuo9020505@gmail.com</td>
+        <td class="money">2988.00</td>
+        <td class="items">正氣師場域精油 10ml 驅邪鎮煞防小人 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">293</td>
+        <td>王香姿</td>
+        <td>a0918508761@gmail.com</td>
+        <td class="money">2960.00</td>
+        <td class="items">法式情慾香水身體乳 經典白麝香 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">294</td>
+        <td>劉家妘</td>
+        <td>spirit.liu@gmail.com</td>
+        <td class="money">2949.00</td>
+        <td class="items">盒裝精油擴香木 花梨木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">295</td>
+        <td>胡馨藝</td>
+        <td>melodybaby88@yahoo.com.te</td>
+        <td class="money">2942.00</td>
+        <td class="items">黃金能量香霧 3ml - 幸運神香降臨 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">296</td>
+        <td>夏慧玲</td>
+        <td>x7621@yahoo.com.tw</td>
+        <td class="money">2916.00</td>
+        <td class="items">紅盾禦守精油酒精噴霧 – 第三重防禦力 500ml – 買大送小 (x1)<br>超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">297</td>
+        <td>仲哲</td>
+        <td>candyiou2000@yahoo.com.tw</td>
+        <td class="money">2900.00</td>
+        <td class="items">費洛蒙的世界® 原始欲望引誘劑PI 男士配方 愛情選擇權 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">298</td>
+        <td>侯秭柔</td>
+        <td>yoyo1983218@gmail.com</td>
+        <td class="money">2882.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)<br>月老姻緣香水 12ml - 正桃花好人緣 (x1)<br>Moon old's 月老姻緣香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">299</td>
+        <td>詹惠萍</td>
+        <td>2512377@yahoo.com.tw</td>
+        <td class="money">2880.00</td>
+        <td class="items">【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">300</td>
+        <td>黃麟翔</td>
+        <td>topperformer0323@gmail.com</td>
+        <td class="money">2880.00</td>
+        <td class="items">【買一送一】GPX 高濃度黃金費洛蒙-男士配方10ml 送 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">301</td>
+        <td>郭淑娟</td>
+        <td>janice0934me@yahoo.com.tw</td>
+        <td class="money">2856.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">302</td>
+        <td>黄詩婷</td>
+        <td>r20030817@gmail.com</td>
+        <td class="money">2844.00</td>
+        <td class="items">粉葡萄柚精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">303</td>
+        <td>賴佩汝</td>
+        <td>ariel8548@yahoo.com.tw</td>
+        <td class="money">2830.00</td>
+        <td class="items">【C.潑天富貴組】2025鐵粉精選！黃金香氛，富貴加持不斷線｜限量30組 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">304</td>
+        <td>徐子華</td>
+        <td>terrow45@yahoo.com.tw</td>
+        <td class="money">2810.00</td>
+        <td class="items">皇家東印度檀香純露 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">305</td>
+        <td>莊媚如</td>
+        <td>capote.clary.0e@icloud.com</td>
+        <td class="money">2801.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">306</td>
+        <td>張峰燕</td>
+        <td>fengyench@gmail.com</td>
+        <td class="money">2801.00</td>
+        <td class="items">黃金能量精油 5ml 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">307</td>
+        <td>梁政碩</td>
+        <td>aa0927396392@icloud.com</td>
+        <td class="money">2780.00</td>
+        <td class="items">【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">308</td>
+        <td>周恬伃</td>
+        <td>peresphoneanita@hotmail.com</td>
+        <td class="money">2780.00</td>
+        <td class="items">大旺運喜氣 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">309</td>
+        <td>王潔如</td>
+        <td>jieru0430@gmail.com</td>
+        <td class="money">2710.00</td>
+        <td class="items">月老姻緣精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">310</td>
+        <td>劉品含</td>
+        <td>aromainsoul@gmail.com</td>
+        <td class="money">2705.00</td>
+        <td class="items">日本桃花精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">311</td>
+        <td>葉可椏</td>
+        <td>kocoya@gmail.com</td>
+        <td class="money">2702.00</td>
+        <td class="items">費洛蒙的世界® 16.伽摩 Come on 催情魅惑中性香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">312</td>
+        <td>楊宗勳</td>
+        <td>s7011215@yahoo.com.tw</td>
+        <td class="money">2700.00</td>
+        <td class="items">鈔能量💰開運鈔票香包 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">313</td>
+        <td>柯怡嫻</td>
+        <td>sakura1729@gmail.com</td>
+        <td class="money">2696.00</td>
+        <td class="items">61.淘氣丘比特－曖昧、暗示、吸引（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">314</td>
+        <td>玄嘉</td>
+        <td>a0920141841@gmail.com</td>
+        <td class="money">2689.00</td>
+        <td class="items">【贈品】韓國 Polar4 檜木芳香塊 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">315</td>
+        <td>劉茹憶</td>
+        <td>g00031g@hotmail.com</td>
+        <td class="money">2688.00</td>
+        <td class="items">【贈品】香金開運小香瓶 (不累計) (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">316</td>
+        <td>黃价綾</td>
+        <td>vivianhk760727@gmail.com</td>
+        <td class="money">2682.00</td>
+        <td class="items">盒裝精油擴香木 胡桃木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">317</td>
+        <td>林渝珊</td>
+        <td>mia413413@gmail.com</td>
+        <td class="money">2682.00</td>
+        <td class="items">獨角獸 魔法精油 10ml - 顯化與創造力 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">318</td>
+        <td>陳曄娟</td>
+        <td>s2851491@gmail.com</td>
+        <td class="money">2651.00</td>
+        <td class="items">美國留蘭香精油 (綠薄荷) 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">319</td>
+        <td>李璧光</td>
+        <td>urlee10000@gmail.com</td>
+        <td class="money">2611.00</td>
+        <td class="items">印度乳香精油 15ml (x1)<br>守護結界 魔法精油 10ml - 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">320</td>
+        <td>林書羽</td>
+        <td>shuyu22@gmail.com</td>
+        <td class="money">2600.00</td>
+        <td class="items">財富金鑰 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">321</td>
+        <td>吳玟葶</td>
+        <td>helen4072002@gmail.com</td>
+        <td class="money">2596.00</td>
+        <td class="items">費洛蒙的世界®16.伽摩Come on－催情、慾望、魅惑（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">322</td>
+        <td>黃孟君</td>
+        <td>amon338526@gmail.com</td>
+        <td class="money">2580.00</td>
+        <td class="items">財富金鑰 魔法精油香水 35ml 金錢磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">323</td>
+        <td>劉嘉涵</td>
+        <td>infojh3@gmail.com</td>
+        <td class="money">2580.00</td>
+        <td class="items">財富金鑰 魔法精油 10ml 金錢磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">324</td>
+        <td>林佩穎</td>
+        <td>kiki0506@gmail.com</td>
+        <td class="money">2580.00</td>
+        <td class="items">財富金鑰 魔法精油香水 35ml 金錢磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">325</td>
+        <td>莊蕙如</td>
+        <td>ruru1521@livemail.tw</td>
+        <td class="money">2580.00</td>
+        <td class="items">財富金鑰 魔法精油香水 35ml 金錢磁場 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">326</td>
+        <td>邱莉卿</td>
+        <td>zxce861111@gmail.com</td>
+        <td class="money">2577.00</td>
+        <td class="items">黃金能量香霧 3ml (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">327</td>
+        <td>李語珊</td>
+        <td>a0980831639@gmail.com</td>
+        <td class="money">2576.00</td>
+        <td class="items">盒裝精油擴香木 桃花芯木 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">328</td>
+        <td>林正山</td>
+        <td>kimi670829@gmail.com</td>
+        <td class="money">2556.00</td>
+        <td class="items">大旺運喜氣 魔法精油 10ml - 開運強運 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">329</td>
+        <td>田紹鴻</td>
+        <td>lamborghini975@gmail.com</td>
+        <td class="money">2547.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【10入】加贈黃金香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">330</td>
+        <td>蔣秋敏</td>
+        <td>r0937079033@gmail.com</td>
+        <td class="money">2535.00</td>
+        <td class="items">守護結界精油 10ml 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">331</td>
+        <td>洪榕應</td>
+        <td>b09210224@gmail.com</td>
+        <td class="money">2530.00</td>
+        <td class="items">夢遊仙境 魔法精油 10ml 一覺好眠 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">332</td>
+        <td>趙培棣</td>
+        <td>petti.chao@gmail.com</td>
+        <td class="money">2528.00</td>
+        <td class="items">黃金能量香霧 16ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">333</td>
+        <td>包采緁</td>
+        <td>uu1658@gmail.com</td>
+        <td class="money">2528.00</td>
+        <td class="items">【推薦女神香83折】費洛蒙的世界® 秘密愛神APC女士配方愛情CODING (x1)<br>【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x1)<br>鈔能量💰開運鈔票香包【3入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">334</td>
+        <td>劉貞貞</td>
+        <td>jessica19690207@gmail.com</td>
+        <td class="money">2520.00</td>
+        <td class="items">夢遊仙境 魔法精油香水 35ml 一覺好眠 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">335</td>
+        <td>許丹鳳</td>
+        <td>chuibie@yahoo.com</td>
+        <td class="money">2516.00</td>
+        <td class="items">CPX-VY 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">336</td>
+        <td>尹宜婷</td>
+        <td>a0917711211@gmail.com</td>
+        <td class="money">2508.00</td>
+        <td class="items">海藿香精油 (廣藿香) 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">337</td>
+        <td>金滿慈</td>
+        <td>rachel50004@gmail.com</td>
+        <td class="money">2500.00</td>
+        <td class="items">守護結界精油 10ml 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">338</td>
+        <td>詩嵋</td>
+        <td>smallstarstar7@gmail.com</td>
+        <td class="money">2484.00</td>
+        <td class="items">愛情靈鑰 魔法精油香水 35ml 吸引愛情 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">339</td>
+        <td>邱韻如</td>
+        <td>ttchyou@hotmail.com</td>
+        <td class="money">2481.00</td>
+        <td class="items">財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)<br>安靜的烏鴉 魔法精油香水 20ml – 平靜思慮 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">340</td>
+        <td>游阡榕</td>
+        <td>maya.yu@ms60.url.com.tw</td>
+        <td class="money">2474.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">341</td>
+        <td>李姿慧</td>
+        <td>a0966392766@gmail.com</td>
+        <td class="money">2474.00</td>
+        <td class="items">黃金能量精油 5ml 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">342</td>
+        <td>蔡佩芬</td>
+        <td>feeler-kimo@yahoo.com.tw</td>
+        <td class="money">2469.00</td>
+        <td class="items">法式情慾香水身體乳 聖潔紫蘭花 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">343</td>
+        <td>江佳蒨</td>
+        <td>vicky652093@gmail.com</td>
+        <td class="money">2460.00</td>
+        <td class="items">【B.財運旺旺組】2025超強組合！黃金能量 × 香氣加乘，財運旺旺一整年｜限量30組 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">344</td>
+        <td>阮宥芯</td>
+        <td>carol_ruan2@jabil.com</td>
+        <td class="money">2455.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">345</td>
+        <td>吳淑芬</td>
+        <td>wsfdebbiewu@gmail.com</td>
+        <td class="money">2440.00</td>
+        <td class="items">費洛蒙的世界®法式情慾香水身體乳 英國梨小蒼蘭 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">346</td>
+        <td>許恩雅</td>
+        <td>yoyomama1110@gmail.com</td>
+        <td class="money">2428.00</td>
+        <td class="items">41.月老神隊友－成就、戀愛、穩交（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">347</td>
+        <td>萱</td>
+        <td>tscwloy1025@yahoo.com.tw</td>
+        <td class="money">2422.00</td>
+        <td class="items">月老姻緣香水 35ml 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">348</td>
+        <td>高芸湘</td>
+        <td>a0963587578@gmail.com</td>
+        <td class="money">2420.00</td>
+        <td class="items">克里米亞玫瑰精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">349</td>
+        <td>蔡瑩育</td>
+        <td>a0985324645@gmail.com</td>
+        <td class="money">2420.00</td>
+        <td class="items">Initial Tai Chi 初始太極精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">350</td>
+        <td>劉姵君</td>
+        <td>greneoo_liu@yahoo.com.tw</td>
+        <td class="money">2413.00</td>
+        <td class="items">奧圖大馬士革玫瑰精油 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">351</td>
+        <td>林禹伸</td>
+        <td>jjjj840221@gmail.com</td>
+        <td class="money">2400.00</td>
+        <td class="items">費洛蒙的世界® 高濃度激素MORE 男士配方 無香味 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">352</td>
+        <td>連育琳</td>
+        <td>e740407@yahoo.com.tw</td>
+        <td class="money">2385.00</td>
+        <td class="items">黃金能量香霧 3ml - 幸運神香降臨 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">353</td>
+        <td>陳盈秀</td>
+        <td>yen8571@gmail.com</td>
+        <td class="money">2368.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【5入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">354</td>
+        <td>彣柔</td>
+        <td>bobo449412@gmail.com</td>
+        <td class="money">2326.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">355</td>
+        <td>陳怡霏</td>
+        <td>a0952690506@gmail.com</td>
+        <td class="money">2326.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">356</td>
+        <td>吳旻娟</td>
+        <td>sharon.wu429@gmail.com</td>
+        <td class="money">2326.00</td>
+        <td class="items">財富金鑰 魔法精油香水 20ml – 金錢能量 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">357</td>
+        <td>古家豪</td>
+        <td>shifi77@yahoo.com</td>
+        <td class="money">2312.00</td>
+        <td class="items">紅盾禦守精油 - 第三重防禦力 10ml - 高度警戒＆減少空氣中傳播物 (x4)</td>
+    </tr>
+    
+    <tr>
+        <td class="">358</td>
+        <td>顏行月</td>
+        <td>jadenew1216@gmail.com</td>
+        <td class="money">2308.00</td>
+        <td class="items">夜花茉莉 (珊瑚茉莉) 精油 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">359</td>
+        <td>林怡如</td>
+        <td>anne2232tw@gmail.com</td>
+        <td class="money">2300.00</td>
+        <td class="items">貓頭鷹守護神 魔杖精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">360</td>
+        <td>陳冠佑</td>
+        <td>may7398@gmail.com</td>
+        <td class="money">2293.00</td>
+        <td class="items">守護結界 魔法精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">361</td>
+        <td>陳筠妘</td>
+        <td>myra201@yahoo.com.tw</td>
+        <td class="money">2286.00</td>
+        <td class="items">爪哇岩蘭草精油 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">362</td>
+        <td>Li</td>
+        <td>dolphinnina@gmail.com</td>
+        <td class="money">2276.00</td>
+        <td class="items">超級防禦精油三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">363</td>
+        <td>廖尉琁</td>
+        <td>way.liao@gmail.com</td>
+        <td class="money">2268.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【10入】加贈黃金香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">364</td>
+        <td>戴湘琳</td>
+        <td>a0932399528@gmail.com</td>
+        <td class="money">2268.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【3入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">365</td>
+        <td>陳慧美</td>
+        <td>a0936958350@gmail.com</td>
+        <td class="money">2258.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">366</td>
+        <td>劉嘉玲</td>
+        <td>a0926658977@gmail.com</td>
+        <td class="money">2257.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">367</td>
+        <td>盧詩穎</td>
+        <td>exhomode26@gmail.com</td>
+        <td class="money">2254.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">368</td>
+        <td>陳鶯梅</td>
+        <td>476p8m41@gmail.com</td>
+        <td class="money">2254.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">369</td>
+        <td>戴郁珊</td>
+        <td>san76210@yahoo.com.tw</td>
+        <td class="money">2254.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">370</td>
+        <td>陳詩靜</td>
+        <td>jing7022@yahoo.com.tw</td>
+        <td class="money">2220.00</td>
+        <td class="items">月老姻緣香水 35ml 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">371</td>
+        <td>羅綺云</td>
+        <td>chiyun0418@gmail.com</td>
+        <td class="money">2216.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">372</td>
+        <td>吳婕瑜</td>
+        <td>wu287287@gmail.com</td>
+        <td class="money">2195.00</td>
+        <td class="items">費洛蒙的世界® 16.伽摩Come on 催情魅惑中性香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">373</td>
+        <td>邱凡軒</td>
+        <td>a0973605999@gmail.com</td>
+        <td class="money">2176.00</td>
+        <td class="items">黃金能量精油 5ml - 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">374</td>
+        <td>瓊慧</td>
+        <td>a0933449302@gmail.com</td>
+        <td class="money">2173.00</td>
+        <td class="items">冥想靜心複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">375</td>
+        <td>李佳玲</td>
+        <td>jcqqling@gmail.com</td>
+        <td class="money">2159.00</td>
+        <td class="items">費洛蒙的世界®法式情慾香水身體乳 經典白麝香 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">376</td>
+        <td>陳璵帆</td>
+        <td>xw7737@icloud.com</td>
+        <td class="money">2150.00</td>
+        <td class="items">Initial Tai Chi 初始太極精油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">377</td>
+        <td>蔡雅如</td>
+        <td>anjoy5588@gmail.com</td>
+        <td class="money">2121.00</td>
+        <td class="items">義大利佛手柑精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">378</td>
+        <td>麗惠</td>
+        <td>anita0510@gmail.com</td>
+        <td class="money">2120.00</td>
+        <td class="items">【客製單】精油 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">379</td>
+        <td>洪怡芬</td>
+        <td>kokonagary@gmail.com</td>
+        <td class="money">2117.00</td>
+        <td class="items">費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x2)<br>費洛蒙的世界®法式情慾香水身體乳 奶油黑醋栗 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">380</td>
+        <td>吳艾霓</td>
+        <td>anny69201051@yahoo.com.tw</td>
+        <td class="money">2100.00</td>
+        <td class="items">【贈品】平安淨化複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">381</td>
+        <td>林柔</td>
+        <td>uornil@gmail.com</td>
+        <td class="money">2100.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">382</td>
+        <td>曾婷</td>
+        <td>f77830@hotmail.com</td>
+        <td class="money">2098.00</td>
+        <td class="items">限定聖誕精神 魔杖油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">383</td>
+        <td>徐瑋謙</td>
+        <td>tristarong811@gmail.com</td>
+        <td class="money">2088.00</td>
+        <td class="items">守護結界 魔法精油 10ml - 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">384</td>
+        <td>廖怡雯</td>
+        <td>g615615615@gmail.com</td>
+        <td class="money">2085.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">385</td>
+        <td>廖詠萱</td>
+        <td>sherry8379@hotmail.com</td>
+        <td class="money">2081.00</td>
+        <td class="items">財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">386</td>
+        <td>高毓馨</td>
+        <td>t090@hwes.tc.edu.tw</td>
+        <td class="money">2080.00</td>
+        <td class="items">生生不息 魔法精油 10ml 生命力 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">387</td>
+        <td>賴巧玲</td>
+        <td>710723yulin@gmail.com</td>
+        <td class="money">2080.00</td>
+        <td class="items">香水級酒精500ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">388</td>
+        <td>葉書翔</td>
+        <td>ggyyihate@hotmail.com</td>
+        <td class="money">2080.00</td>
+        <td class="items">黃金能量香霧 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">389</td>
+        <td>林蒔妤</td>
+        <td>gqni@hotmail.com</td>
+        <td class="money">2077.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 20ml – 開運強運 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">390</td>
+        <td>陳宥彤</td>
+        <td>a0955459432@gmail.com</td>
+        <td class="money">2069.00</td>
+        <td class="items">純植物性3合1基底油（按摩油）1000ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">391</td>
+        <td>許嘉倫</td>
+        <td>galantshu0111@gmail.com</td>
+        <td class="money">2034.00</td>
+        <td class="items">黃金能量香霧 3ml - 幸運神香降臨 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">392</td>
+        <td>謝湘</td>
+        <td>momo5937@yahoo.com.tw</td>
+        <td class="money">2034.00</td>
+        <td class="items">黃金能量精油 5ml 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">393</td>
+        <td>趙韋筑</td>
+        <td>apetyerweichu@gmail.com</td>
+        <td class="money">2030.00</td>
+        <td class="items">【買一送一】洞悉大師精油 10ml 送 精油香水 20ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">394</td>
+        <td>楊禮綺</td>
+        <td>xmaschichi1225@gmail.com</td>
+        <td class="money">2027.00</td>
+        <td class="items">黃金能量香霧 16ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">395</td>
+        <td>鄭芷欣</td>
+        <td>kirsty619tw@gmail.com</td>
+        <td class="money">2025.00</td>
+        <td class="items">正氣師場域純露 100ml 化煞防小人 (x5)</td>
+    </tr>
+    
+    <tr>
+        <td class="">396</td>
+        <td>徐珮尹</td>
+        <td>s1668799@gmail.com</td>
+        <td class="money">2020.00</td>
+        <td class="items">守護結界精油 10ml 驅邪鎮煞 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">397</td>
+        <td>劉倫伶</td>
+        <td>filis040968@gmail.com</td>
+        <td class="money">2001.00</td>
+        <td class="items">墨西哥甜橙精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">398</td>
+        <td>張美淑</td>
+        <td>mickey3516@gmail.com</td>
+        <td class="money">2000.00</td>
+        <td class="items">義大利佛手柑精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">399</td>
+        <td>MinEn旻恩</td>
+        <td>yangminen@gmail.com</td>
+        <td class="money">2000.00</td>
+        <td class="items">香水級酒精500ml (x3)</td>
+    </tr>
+    
+    <tr>
+        <td class="">400</td>
+        <td>周易安</td>
+        <td>doreen5888@gmail.com</td>
+        <td class="money">2000.00</td>
+        <td class="items">靜心冥想精油 10ml 專注力升級版 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">401</td>
+        <td>蔡雅平</td>
+        <td>vemma610@gmail.com</td>
+        <td class="money">1942.00</td>
+        <td class="items">3% 玫瑰精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">402</td>
+        <td>蔡靜茹</td>
+        <td>carrot0421@yahoo.com.tw</td>
+        <td class="money">1920.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 35ml 開運招財 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">403</td>
+        <td>Esther</td>
+        <td>esther19890216@gmail.com</td>
+        <td class="money">1900.00</td>
+        <td class="items">接骨木花香氛精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">404</td>
+        <td>吳宥萱</td>
+        <td>monlu0512@yahoo.com.tw</td>
+        <td class="money">1887.00</td>
+        <td class="items">安靜的烏鴉 魔杖調和油 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">405</td>
+        <td>李純帆</td>
+        <td>demilee25@gmail.com</td>
+        <td class="money">1879.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【5入】加贈黃金香霧3ml (x1)<br>愛情靈鑰香水 試香體驗瓶 2ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">406</td>
+        <td>吳忻霓</td>
+        <td>cookiee015@hotmail.com</td>
+        <td class="money">1860.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 35ml 開運招財 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">407</td>
+        <td>郭雪瑤</td>
+        <td>snowing16@gmail.com</td>
+        <td class="money">1859.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 20ml – 開運強運 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">408</td>
+        <td>Daphne Chan</td>
+        <td>daphneshan@yahoo.com.hk</td>
+        <td class="money">1850.00</td>
+        <td class="items">橡木苔精油 (原精) 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">409</td>
+        <td>高珮慈</td>
+        <td>winds50312@yahoo.com.tw</td>
+        <td class="money">1829.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">410</td>
+        <td>❤️Graceful</td>
+        <td>happy0919032878@gmail.com</td>
+        <td class="money">1816.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-WR 社交女士配方 喜玲瓏經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">411</td>
+        <td>淑惠</td>
+        <td>shuidhrra@gmail.com</td>
+        <td class="money">1816.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-VY 女士配方 美人經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">412</td>
+        <td>黃玫真</td>
+        <td>a0921195141@gmail.com</td>
+        <td class="money">1816.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-VS 女士配方 美人經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">413</td>
+        <td>阿翰</td>
+        <td>mr86250@gmail.com</td>
+        <td class="money">1746.00</td>
+        <td class="items">靈鳥森林 魔杖油 10ml - 靈性進化 (x1)<br>純植物性3合1基底油（按摩油）500ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">414</td>
+        <td>曾子秦</td>
+        <td>a005204@hotmail.com</td>
+        <td class="money">1740.00</td>
+        <td class="items">安靜的烏鴉 魔法精油香水 35ml 終結精神內耗 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">415</td>
+        <td>范巧宜</td>
+        <td>ashleyfan84@gmail.com</td>
+        <td class="money">1740.00</td>
+        <td class="items">費洛蒙的世界®INFP 調停者 - MBTI人格心理香水 35ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">416</td>
+        <td>陳光鴻</td>
+        <td>h74611155@gmail.con</td>
+        <td class="money">1710.00</td>
+        <td class="items">尼泊爾菖蒲精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">417</td>
+        <td>潘旻鴻</td>
+        <td>evergreen7410@gmail.com</td>
+        <td class="money">1696.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">418</td>
+        <td>黃萱琳</td>
+        <td>a0906755808@gmail.com</td>
+        <td class="money">1664.00</td>
+        <td class="items">法式情慾香水身體乳 聖潔紫蘭花 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">419</td>
+        <td>楊青蓉</td>
+        <td>gracecjyang@gmail.com</td>
+        <td class="money">1648.00</td>
+        <td class="items">黃金能量精油 5ml 古老豐盛祕方 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">420</td>
+        <td>呂韋傑</td>
+        <td>nix99688@gmail.com</td>
+        <td class="money">1640.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-HY 男士配方 英雄經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">421</td>
+        <td>邱怡菁</td>
+        <td>hiking10027@gmail.com</td>
+        <td class="money">1640.00</td>
+        <td class="items">CPX-VS 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">422</td>
+        <td>黄岳斌</td>
+        <td>peterhuang288@gmail.com</td>
+        <td class="money">1640.00</td>
+        <td class="items">黃金能量精油 5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">423</td>
+        <td>王芃云</td>
+        <td>anni_001tw@yahoo.com.tw</td>
+        <td class="money">1640.00</td>
+        <td class="items">安靜的烏鴉 魔法精油 10ml 終結精神內耗 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">424</td>
+        <td>鄧惠文</td>
+        <td>s8903210@gmail.com</td>
+        <td class="money">1640.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【10入】送黃金香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">425</td>
+        <td>陳怡瑀</td>
+        <td>lavare1413@gmail.com</td>
+        <td class="money">1640.00</td>
+        <td class="items">【消費滿1000元】送奇蹟花源純露100ml（香味隨機） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">426</td>
+        <td>林祐名</td>
+        <td>a0980903466@gmail.com</td>
+        <td class="money">1640.00</td>
+        <td class="items">CPX-VY 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">427</td>
+        <td>張育瑄</td>
+        <td>amber041917@yahoo.com.tw</td>
+        <td class="money">1630.00</td>
+        <td class="items">香水級酒精500ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">428</td>
+        <td>簡嘉怡</td>
+        <td>joy10714@yahoo.com.tw</td>
+        <td class="money">1594.00</td>
+        <td class="items">費洛蒙的世界® 47.使壞維納斯 誘惑挑逗女香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">429</td>
+        <td>薛詠心</td>
+        <td>nina26272888@gmail.com</td>
+        <td class="money">1584.00</td>
+        <td class="items">印度乳香精油 15ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">430</td>
+        <td>張振麒</td>
+        <td>c1235366@gmail.com</td>
+        <td class="money">1540.00</td>
+        <td class="items">費洛蒙的世界® 極致版 CPX-HS 男士配方 英雄經典香引 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">431</td>
+        <td>邱鈺珊</td>
+        <td>angel19901004twe@yahoo.com.tw</td>
+        <td class="money">1540.00</td>
+        <td class="items">CPX-VY 旗艦版 頂級東方費洛蒙 美人經典香引-女用 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">432</td>
+        <td>張少閩</td>
+        <td>akai8006@gmail.com</td>
+        <td class="money">1500.00</td>
+        <td class="items">香水級酒精500ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">433</td>
+        <td>許瀞云</td>
+        <td>cap852852@yahoocom.tw</td>
+        <td class="money">1495.00</td>
+        <td class="items">特別受歡迎 魔法精油香水 20ml – 好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">434</td>
+        <td>范鳳倫</td>
+        <td>ellenfan888@gmail.com</td>
+        <td class="money">1490.00</td>
+        <td class="items">埃及甜羅勒精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">435</td>
+        <td>鍾曉慧</td>
+        <td>g883030@gmail.com</td>
+        <td class="money">1484.00</td>
+        <td class="items">正氣師場域純露 100ml 化煞防小人 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">436</td>
+        <td>吳美儀</td>
+        <td>enita19760503@gmail.com</td>
+        <td class="money">1419.00</td>
+        <td class="items">印度檸檬香茅精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">437</td>
+        <td>弘鈞</td>
+        <td>liaohongjun70@gmail.com</td>
+        <td class="money">1408.00</td>
+        <td class="items">費洛蒙的世界® 67.厄洛斯宣言 獵艷佔有男香 12ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">438</td>
+        <td>陳卜巖</td>
+        <td>tgbhu5000@yahoo.com.tw</td>
+        <td class="money">1408.00</td>
+        <td class="items">76.情聖安格斯－迷戀、勾引、玩家（男香）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">439</td>
+        <td>鄭沛晴</td>
+        <td>chunju2010@gmail.com</td>
+        <td class="money">1407.00</td>
+        <td class="items">獨角獸 魔法精油香水 20ml – 顯化與創造力 (x1)<br>印度檸檬香茅精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">440</td>
+        <td>陳彥如</td>
+        <td>littleforestofficial@gmail.com</td>
+        <td class="money">1370.00</td>
+        <td class="items">厄瓜多爾秘魯聖木精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">441</td>
+        <td>張素惠</td>
+        <td>shou23201258@gmail.com</td>
+        <td class="money">1309.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 20ml – 開運強運 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">442</td>
+        <td>謝孟樹</td>
+        <td>n0260107@gmail.com</td>
+        <td class="money">1301.00</td>
+        <td class="items">【買三送三】超級防禦精油三重奏 送 精油酒精噴霧三重奏 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">443</td>
+        <td>侯雅芳</td>
+        <td>avon6817@gmail.com</td>
+        <td class="money">1292.00</td>
+        <td class="items">黃金能量香霧 10ml - 財富的鑰匙 (x1)<br>黃金能量香霧 3ml - 幸運神香降臨 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">444</td>
+        <td>張博勝</td>
+        <td>bobson0000@gmail.com</td>
+        <td class="money">1277.00</td>
+        <td class="items">孵夢精靈 試香體驗瓶 2ml 限購1瓶 (x1)<br>超實用DIY調香工具組 香水級酒精+香水空瓶+調香工具 輕鬆做出自己的精油香水 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">445</td>
+        <td>侯杙諼</td>
+        <td>yoyo1983218@gmail.com</td>
+        <td class="money">1273.00</td>
+        <td class="items">黃金能量香霧 16ml - 淘金概念香款 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">446</td>
+        <td>陳俊宏</td>
+        <td>edk78914@gmail.com</td>
+        <td class="money">1273.00</td>
+        <td class="items">【買一送一】黃金能量精油5ml 送 黃金能量香霧10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">447</td>
+        <td>曾佳慧</td>
+        <td>mm0920880328@gmail.com</td>
+        <td class="money">1273.00</td>
+        <td class="items">財富金鑰 魔法精油香水 20ml – 金錢能量 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">448</td>
+        <td>陳蓉佩</td>
+        <td>tofupei46626@gmail.com</td>
+        <td class="money">1260.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">449</td>
+        <td>陳宜</td>
+        <td>tp6u6ted@hotmail.com.tw</td>
+        <td class="money">1233.00</td>
+        <td class="items">正氣師場域複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">450</td>
+        <td>林縵均</td>
+        <td>ezoneron@yahoo.com.tw</td>
+        <td class="money">1216.00</td>
+        <td class="items">紅盾禦守精油-第三重防禦力 10ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">451</td>
+        <td>陳怡秀</td>
+        <td>issue0616@hotmail.com</td>
+        <td class="money">1205.00</td>
+        <td class="items">正氣師場域複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">452</td>
+        <td>沈啟堯</td>
+        <td>evolatev29@gmail.com</td>
+        <td class="money">1173.00</td>
+        <td class="items">【買一送一】黃金能量香霧16ml 送 黃金能量香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">453</td>
+        <td>黃淑玲</td>
+        <td>hung_aung1969@yahoo.com.tw</td>
+        <td class="money">1160.00</td>
+        <td class="items">黃金能量香霧 16ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">454</td>
+        <td>殷仲堂</td>
+        <td>gyannn93@gmail.com</td>
+        <td class="money">1060.00</td>
+        <td class="items">香水級酒精100ml (x1)<br>費洛蒙的世界® 76.情聖安格斯 迷戀勾引男香 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">455</td>
+        <td>吳函庭</td>
+        <td>j820825@gmail.com</td>
+        <td class="money">1055.00</td>
+        <td class="items">企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">456</td>
+        <td>善涵na.</td>
+        <td>wandy201332@yahoo.com.tw</td>
+        <td class="money">1040.00</td>
+        <td class="items">埃及馬鬱蘭精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">457</td>
+        <td>劉萱臻</td>
+        <td>amei0227@gmail.com</td>
+        <td class="money">987.00</td>
+        <td class="items">Moon old's 月老姻緣香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">458</td>
+        <td>黃瑗霏</td>
+        <td>clairekim636@gmail.com</td>
+        <td class="money">980.00</td>
+        <td class="items">【贈品】奇蹟花源純露100ml（香味隨機） (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">459</td>
+        <td>丁鈺樺</td>
+        <td>lauretta0702@gmail.com</td>
+        <td class="money">973.00</td>
+        <td class="items">超級防禦精油酒精噴霧三重奏 ☆嚴峻期間☆全民優惠組合 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">460</td>
+        <td>賴威辰</td>
+        <td>978301@gmail.com</td>
+        <td class="money">940.00</td>
+        <td class="items">黃金能量香霧 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">461</td>
+        <td>王如仙</td>
+        <td>d0952200635@gmail.com</td>
+        <td class="money">940.00</td>
+        <td class="items">真正薰衣草精油 15ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">462</td>
+        <td>吳寅碩</td>
+        <td>a891899@gmail.com</td>
+        <td class="money">928.00</td>
+        <td class="items">法式情慾香水身體乳 聖潔紫蘭花 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">463</td>
+        <td>李詩雯</td>
+        <td>lswicsw@yahoo.com.tw</td>
+        <td class="money">928.00</td>
+        <td class="items">法式情慾香水身體乳 聖潔紫蘭花 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">464</td>
+        <td>楊朝崴</td>
+        <td>steven00814@gmail.com</td>
+        <td class="money">928.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">465</td>
+        <td>黃昱維</td>
+        <td>yuwei4192@yahoo.com.tw</td>
+        <td class="money">928.00</td>
+        <td class="items">法式情慾香水身體乳 聖潔紫蘭花 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">466</td>
+        <td>吳幸宜</td>
+        <td>hsing0207@gmail.com</td>
+        <td class="money">928.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">467</td>
+        <td>吳沛芳</td>
+        <td>flowercat123@gmail.com</td>
+        <td class="money">927.00</td>
+        <td class="items">Moon old's 月老姻緣香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">468</td>
+        <td>廖芷嫻</td>
+        <td>rita670103@yahoo.com.tw</td>
+        <td class="money">927.00</td>
+        <td class="items">Moon old's 月老姻緣香水 12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">469</td>
+        <td>黃偉嘉</td>
+        <td>ooyuzhu@gmail.com</td>
+        <td class="money">920.00</td>
+        <td class="items">晶透保濕身體水凝露（微淡香） 250ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">470</td>
+        <td>孫翊禎</td>
+        <td>girl09188307@gmail.com</td>
+        <td class="money">920.00</td>
+        <td class="items">費洛蒙的世界®法式情慾香水身體乳 經典白麝香 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">471</td>
+        <td>李聆寗</td>
+        <td>lillian329@gmail.com</td>
+        <td class="money">920.00</td>
+        <td class="items">費洛蒙的世界®法式情慾香水身體乳 聖潔紫蘭花 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">472</td>
+        <td>謝芳月</td>
+        <td>m1215007052@yahoo.com.tw</td>
+        <td class="money">908.00</td>
+        <td class="items">黃金能量香霧 16ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">473</td>
+        <td>沛芸</td>
+        <td>d0952200635@gmail.com</td>
+        <td class="money">887.00</td>
+        <td class="items">皇家薰衣草精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">474</td>
+        <td>鍾雨雨芸</td>
+        <td>circle0323@gmail.com</td>
+        <td class="money">880.00</td>
+        <td class="items">真正薰衣草精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">475</td>
+        <td>王玲惠</td>
+        <td>flute770204@gmail.com</td>
+        <td class="money">853.00</td>
+        <td class="items">紫盾靜好精油 - 第六重安定力 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">476</td>
+        <td>陳會敏</td>
+        <td>w730525520@yahoo.com.tw</td>
+        <td class="money">848.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【5入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">477</td>
+        <td>陳宥琦</td>
+        <td>a0982805465@gmail.com</td>
+        <td class="money">848.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【5入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">478</td>
+        <td>陳玉純</td>
+        <td>phsin_2305066@yahoo.com.tw</td>
+        <td class="money">846.00</td>
+        <td class="items">黃金能量香霧 10ml - 財富的鑰匙 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">479</td>
+        <td>吳慧芳</td>
+        <td>p903292002@yahoo.com.tw</td>
+        <td class="money">840.00</td>
+        <td class="items">真正薰衣草精油 15ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">480</td>
+        <td>岳斌</td>
+        <td>peterhuang288@gmail.com</td>
+        <td class="money">828.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 20ml – 開運強運 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">481</td>
+        <td>品希</td>
+        <td>highvaluemuse@gmail.com</td>
+        <td class="money">794.00</td>
+        <td class="items">47.使壞維納斯－誘惑、挑逗、回頭率（女香）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">482</td>
+        <td>張云慈</td>
+        <td>justnancy0528@gmail.com</td>
+        <td class="money">792.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">483</td>
+        <td>陳品臻</td>
+        <td>mis19801016@gmail.com</td>
+        <td class="money">792.00</td>
+        <td class="items">月老姻緣香水 20ml - 正桃花好人緣 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">484</td>
+        <td>黃筠筑</td>
+        <td>amy99244@gmail.com</td>
+        <td class="money">779.00</td>
+        <td class="items">南非玫瑰天竺葵精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">485</td>
+        <td>張皓閔</td>
+        <td>qz700392@gmail.com</td>
+        <td class="money">734.00</td>
+        <td class="items">47.使壞維納斯－誘惑、挑逗、回頭率（女香）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">486</td>
+        <td>陳庭寬</td>
+        <td>jake2910@gmail.com</td>
+        <td class="money">728.00</td>
+        <td class="items">大旺運喜氣 魔法精油香水 20ml – 開運強運 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">487</td>
+        <td>許元豪</td>
+        <td>s020119@gmail.com</td>
+        <td class="money">720.00</td>
+        <td class="items">厄瓜多爾秘魯聖木精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">488</td>
+        <td>陳心慈</td>
+        <td>emina94513@gmail.com</td>
+        <td class="money">720.00</td>
+        <td class="items">冥想靜心複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">489</td>
+        <td>廖子涵</td>
+        <td>win00125336@Yahoo.com.tw</td>
+        <td class="money">698.00</td>
+        <td class="items">平安淨化複芳純露 100ml (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">490</td>
+        <td>楊千育</td>
+        <td>yoseniku@gmail.com</td>
+        <td class="money">655.00</td>
+        <td class="items">黃金能量香霧 10ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">491</td>
+        <td>文玲</td>
+        <td>elma850917@gmail.com</td>
+        <td class="money">640.00</td>
+        <td class="items">【超實用DIY調香工具組】香水級酒精+香水空瓶+調香工具 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">492</td>
+        <td>謝袖雅</td>
+        <td>penny19931214@gmail.com</td>
+        <td class="money">620.00</td>
+        <td class="items">平安淨化複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">493</td>
+        <td>黃幼淇</td>
+        <td>s88021522@gmail.com</td>
+        <td class="money">608.00</td>
+        <td class="items">保濕身體乳（微淡香） 250ml (x1)<br>甜杏仁油（無香）250ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">494</td>
+        <td>梁詩妘</td>
+        <td>d0916915639@gmail.com</td>
+        <td class="money">602.00</td>
+        <td class="items">印度乳香精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">495</td>
+        <td>肇軒</td>
+        <td>mixiou008@gmail.com</td>
+        <td class="money">600.00</td>
+        <td class="items">法國百里香精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">496</td>
+        <td>周美玲</td>
+        <td>mei4856@gmail.com</td>
+        <td class="money">598.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">497</td>
+        <td>溫譽玲</td>
+        <td>cindy.wen@twsc.com.tw</td>
+        <td class="money">598.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">498</td>
+        <td>黃怡菱</td>
+        <td>toro6830jjj@hotmail.com</td>
+        <td class="money">566.00</td>
+        <td class="items">綠盾暢氣精油酒精噴霧 - 第一重淨化力 100ml - 空氣清新＆蚊蟲叮咬 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">499</td>
+        <td>賴奕均</td>
+        <td>anny80830@gmail.com</td>
+        <td class="money">566.00</td>
+        <td class="items">綠盾暢氣精油酒精噴霧 - 第一重淨化力 100ml - 空氣清新＆蚊蟲叮咬 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">500</td>
+        <td>梅玲</td>
+        <td>amy0989624906@gmail.com</td>
+        <td class="money">548.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【3入】加贈黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">501</td>
+        <td>陳佳琳</td>
+        <td>m5979736@gmail.com</td>
+        <td class="money">548.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【3入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">502</td>
+        <td>謝芸珊</td>
+        <td>coco31136886@gmail.com</td>
+        <td class="money">548.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【3入】送黃金香霧3ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">503</td>
+        <td>邱沛嫺</td>
+        <td>cpc123cpc@hotmail.com</td>
+        <td class="money">548.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【3入】送黃金香霧 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">504</td>
+        <td>李英賢</td>
+        <td>sen16821@gmail.com</td>
+        <td class="money">548.00</td>
+        <td class="items">鈔能量💰開運鈔票香包【3入】送黃金香霧 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">505</td>
+        <td>廖子涵</td>
+        <td>Shin981018@gmail.com</td>
+        <td class="money">502.00</td>
+        <td class="items">平安淨化純露 100ml 改善氣場 (x2)</td>
+    </tr>
+    
+    <tr>
+        <td class="">506</td>
+        <td>陳玫芝</td>
+        <td>maggie01017@gmail.com</td>
+        <td class="money">499.00</td>
+        <td class="items">真正薰衣草精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">507</td>
+        <td>蘇惠婷</td>
+        <td>julie11151111@gmail.com</td>
+        <td class="money">472.00</td>
+        <td class="items">16.伽摩Come on－催情、慾望、魅惑（中性香水）12ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">508</td>
+        <td>吳詠恩</td>
+        <td>forjojo123@gmail.com</td>
+        <td class="money">431.00</td>
+        <td class="items">波斯安息香精油（膠狀）5ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">509</td>
+        <td>范嘉靜</td>
+        <td>mandy68181@gmail.com</td>
+        <td class="money">400.00</td>
+        <td class="items">南非玫瑰天竺葵精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">510</td>
+        <td>高郁茹</td>
+        <td>happymelon707@gmail.com</td>
+        <td class="money">399.00</td>
+        <td class="items">真正薰衣草精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">511</td>
+        <td>陳敬堯</td>
+        <td>anniekaoqq@gmail.com</td>
+        <td class="money">392.00</td>
+        <td class="items">黃金能量香霧 3ml - 幸運神香降臨 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">512</td>
+        <td>劉佳鑫</td>
+        <td>xin780530@gmail.com</td>
+        <td class="money">390.00</td>
+        <td class="items">金盞花香氛精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">513</td>
+        <td>林巧薇</td>
+        <td>candy80201@yahoo.com.tw</td>
+        <td class="money">380.00</td>
+        <td class="items">北美神聖白鼠尾草 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">514</td>
+        <td>鍾曉慧</td>
+        <td>g883030@yahoo.com.tw</td>
+        <td class="money">373.00</td>
+        <td class="items">正氣師場域複芳純露 100ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">515</td>
+        <td>葉仲豪</td>
+        <td>asd9262213@yahoo.com.tw</td>
+        <td class="money">359.00</td>
+        <td class="items">企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">516</td>
+        <td>麗玉</td>
+        <td>li9397@gmail.com</td>
+        <td class="money">351.00</td>
+        <td class="items">綠盾暢氣精油 - 第一重淨化力 10ml - 空氣清新＆蚊蟲叮咬 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">517</td>
+        <td>林敬淙</td>
+        <td>jimwarmlin@gmail.com</td>
+        <td class="money">350.00</td>
+        <td class="items">純植物性3合1基底油（按摩油） 250ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">518</td>
+        <td>簡瑜瑩</td>
+        <td>evachien1977@gmail.com</td>
+        <td class="money">346.00</td>
+        <td class="items">黃金能量香霧 3ml - 幸運神香降臨 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">519</td>
+        <td>Athena李偲綺</td>
+        <td>athena.lee768@gmail.com</td>
+        <td class="money">340.00</td>
+        <td class="items">墨西哥甜橙精油 15ml (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">520</td>
+        <td>李虹玉</td>
+        <td>hyl168168@gmail.com</td>
+        <td class="money">259.00</td>
+        <td class="items">企鵝噴噴 身體涼感噴霧 100ml 買一送一 (x1)</td>
+    </tr>
+    
+    <tr>
+        <td class="">521</td>
+        <td>王釬淽</td>
+        <td>be.free3003@gmail.com</td>
+        <td class="money">99.00</td>
+        <td class="items">逐夢騎士 試香體驗瓶 2ml 限購1瓶 (x1)</td>
+    </tr>
+    
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
