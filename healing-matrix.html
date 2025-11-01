@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高維度療癒矩陣 | 生命程式碼升級計劃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", sans-serif;
+            line-height: 1.8;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.25) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(138, 43, 226, 0.2) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(75, 0, 130, 0.2) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            z-index: 1;
+            position: relative;
+        }
+
+        .warning-badge {
+            display: inline-block;
+            padding: 14px 32px;
+            background: rgba(255, 0, 80, 0.2);
+            border: 2px solid #ff0050;
+            color: #ff0050;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 3px;
+            margin-bottom: 35px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 0, 80, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(255, 0, 80, 0.6); }
+        }
+
+        .hero h1 {
+            font-size: 64px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 25px;
+            text-shadow: 0 0 40px rgba(138, 43, 226, 0.6);
+            letter-spacing: 3px;
+            line-height: 1.3;
+        }
+
+        .hero .subtitle {
+            font-size: 28px;
+            color: #e0e0f0;
+            margin-bottom: 30px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .hero .tagline {
+            font-size: 20px;
+            color: #8a2be2;
+            font-weight: 600;
+            margin-bottom: 50px;
+            line-height: 1.8;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 900;
+            color: #8a2be2;
+            text-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: #b8b8d1;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        /* Symptoms Section */
+        .symptoms {
+            background: #16213e;
+            padding: 100px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 900;
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: #b8b8d1;
+            margin-bottom: 70px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 35px;
+            margin-bottom: 60px;
+        }
+
+        .symptom-card {
+            background: rgba(26, 26, 46, 0.9);
+            padding: 45px;
+            border-radius: 20px;
+            border: 2px solid rgba(138, 43, 226, 0.3);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .symptom-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .symptom-card:hover {
+            transform: translateY(-12px);
+            border-color: rgba(138, 43, 226, 0.8);
+            box-shadow: 0 25px 50px rgba(138, 43, 226, 0.3);
+        }
+
+        .symptom-card:hover::before {
+            opacity: 1;
+        }
+
+        .symptom-icon {
+            font-size: 42px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .symptom-card h3 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #8a2be2;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+
+        .symptom-card p {
+            font-size: 17px;
+            color: #d0d0e0;
+            line-height: 1.9;
+        }
+
+        .upgrade-notice {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.2) 0%, rgba(75, 0, 130, 0.2) 100%);
+            border-radius: 20px;
+            margin-top: 50px;
+        }
+
+        .upgrade-notice p {
+            font-size: 26px;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.6;
+            text-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+        }
+
+        /* Transform Stories */
+        .transform-stories {
+            background: #0f1419;
+            padding: 100px 20px;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .story-card {
+            background: rgba(26, 26, 46, 0.8);
+            padding: 40px;
+            border-radius: 20px;
+            border-left: 5px solid #8a2be2;
+            transition: all 0.3s ease;
+        }
+
+        .story-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 15px 40px rgba(138, 43, 226, 0.2);
+        }
+
+        .story-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .story-avatar {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 900;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .story-info h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .story-info .role {
+            font-size: 14px;
+            color: #8a2be2;
+            font-weight: 600;
+        }
+
+        .story-content {
+            font-size: 16px;
+            color: #d0d0e0;
+            line-height: 1.9;
+            margin-bottom: 20px;
+        }
+
+        .story-result {
+            padding: 20px;
+            background: rgba(138, 43, 226, 0.1);
+            border-radius: 10px;
+            border-left: 3px solid #8a2be2;
+        }
+
+        .story-result .label {
+            font-size: 12px;
+            color: #8a2be2;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .story-result .value {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+
+        /* Products Section */
+        .products {
+            background: linear-gradient(180deg, #16213e 0%, #0f1419 100%);
+            padding: 100px 20px;
+        }
+
+        .products-intro {
+            text-align: center;
+            max-width: 950px;
+            margin: 0 auto 90px;
+            color: #d0d0e0;
+            font-size: 19px;
+            line-height: 2.2;
+        }
+
+        .products-intro .highlight {
+            color: #8a2be2;
+            font-weight: 800;
+            font-size: 21px;
+            text-shadow: 0 0 10px rgba(138, 43, 226, 0.3);
+        }
+
+        .product-card {
+            background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(22, 33, 62, 0.95) 100%);
+            border-radius: 25px;
+            padding: 70px 60px;
+            margin-bottom: 70px;
+            border: 2px solid rgba(138, 43, 226, 0.4);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .product-card:hover {
+            border-color: rgba(138, 43, 226, 0.8);
+            box-shadow: 0 25px 70px rgba(138, 43, 226, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-header {
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-number {
+            display: inline-block;
+            padding: 10px 25px;
+            background: rgba(138, 43, 226, 0.3);
+            color: #8a2be2;
+            font-size: 15px;
+            font-weight: 800;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .product-card h3 {
+            font-size: 40px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 0 0 20px rgba(138, 43, 226, 0.3);
+        }
+
+        .product-card .function {
+            font-size: 22px;
+            color: #8a2be2;
+            font-weight: 700;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+
+        .product-card .description {
+            font-size: 18px;
+            color: #d0d0e0;
+            line-height: 2.1;
+            margin-bottom: 40px;
+        }
+
+        .product-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-item {
+            background: rgba(10, 10, 10, 0.6);
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #8a2be2;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: rgba(138, 43, 226, 0.1);
+            transform: translateX(5px);
+        }
+
+        .feature-item .label {
+            font-size: 13px;
+            color: #8a2be2;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 10px;
+        }
+
+        .feature-item .value {
+            font-size: 17px;
+            color: #ffffff;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        .product-oils {
+            margin-top: 35px;
+            padding: 30px;
+            background: rgba(138, 43, 226, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(138, 43, 226, 0.2);
+            position: relative;
+            z-index: 1;
+        }
+
+        .oils-title {
+            font-size: 16px;
+            color: #8a2be2;
+            font-weight: 800;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .oils-list {
+            font-size: 17px;
+            color: #e0e0f0;
+            line-height: 1.9;
+            font-weight: 600;
+        }
+
+        /* Ritual Section */
+        .ritual {
+            background: #16213e;
+            padding: 100px 20px;
+        }
+
+        .ritual-intro {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto 90px;
+        }
+
+        .ritual-intro p {
+            font-size: 22px;
+            color: #d0d0e0;
+            line-height: 2.2;
+            margin-bottom: 25px;
+        }
+
+        .ritual-intro .highlight {
+            color: #8a2be2;
+            font-weight: 800;
+            font-size: 24px;
+        }
+
+        .ritual-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 45px;
+        }
+
+        .ritual-card {
+            background: rgba(26, 26, 46, 0.9);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid rgba(138, 43, 226, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .ritual-card:hover {
+            transform: scale(1.03);
+            border-color: rgba(138, 43, 226, 0.7);
+            box-shadow: 0 20px 50px rgba(138, 43, 226, 0.2);
+        }
+
+        .ritual-card h4 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #8a2be2;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        .ritual-step {
+            margin-bottom: 25px;
+        }
+
+        .ritual-step .step-label {
+            font-size: 14px;
+            color: #8a2be2;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .ritual-step .step-content {
+            font-size: 17px;
+            color: #d0d0e0;
+            line-height: 2;
+        }
+
+        /* Data Section */
+        .data-section {
+            background: #0f1419;
+            padding: 100px 20px;
+        }
+
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin-top: 60px;
+        }
+
+        .data-card {
+            background: linear-gradient(135deg, rgba(138, 43, 226, 0.15) 0%, rgba(75, 0, 130, 0.15) 100%);
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            border: 2px solid rgba(138, 43, 226, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .data-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(138, 43, 226, 0.3);
+        }
+
+        .data-value {
+            font-size: 52px;
+            font-weight: 900;
+            color: #8a2be2;
+            margin-bottom: 15px;
+            text-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
+        }
+
+        .data-label {
+            font-size: 18px;
+            color: #e0e0f0;
+            font-weight: 700;
+            line-height: 1.6;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            background: linear-gradient(135deg, #16213e 0%, #0f1419 100%);
+            padding: 100px 20px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .benefit-item {
+            background: rgba(26, 26, 46, 0.8);
+            padding: 45px;
+            border-radius: 20px;
+            border: 2px solid rgba(138, 43, 226, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            border-color: rgba(138, 43, 226, 0.6);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 45px rgba(138, 43, 226, 0.2);
+        }
+
+        .benefit-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: rgba(138, 43, 226, 0.3);
+            margin-bottom: 20px;
+        }
+
+        .benefit-item h4 {
+            font-size: 24px;
+            font-weight: 800;
+            color: #8a2be2;
+            margin-bottom: 18px;
+        }
+
+        .benefit-item p {
+            font-size: 17px;
+            color: #d0d0e0;
+            line-height: 2;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background: #16213e;
+            padding: 100px 20px;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(26, 26, 46, 0.8);
+            padding: 35px 40px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            border: 2px solid rgba(138, 43, 226, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            border-color: rgba(138, 43, 226, 0.5);
+            box-shadow: 0 10px 30px rgba(138, 43, 226, 0.15);
+        }
+
+        .faq-question {
+            font-size: 20px;
+            font-weight: 800;
+            color: #8a2be2;
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .faq-answer {
+            font-size: 17px;
+            color: #d0d0e0;
+            line-height: 2;
+        }
+
+        /* CTA Button */
+        .cta-button {
+            display: inline-block;
+            padding: 22px 60px;
+            background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+            color: white;
+            font-size: 22px;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            box-shadow: 0 15px 40px rgba(138, 43, 226, 0.5);
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+            max-width: 450px;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 20px 50px rgba(138, 43, 226, 0.7);
+        }
+
+        /* Final CTA Section */
+        .final-cta {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%);
+            padding: 140px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(138, 43, 226, 0.25) 0%, transparent 70%);
+        }
+
+        .final-cta-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-cta h2 {
+            font-size: 52px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 35px;
+            text-shadow: 0 0 40px rgba(138, 43, 226, 0.6);
+            letter-spacing: 2px;
+            line-height: 1.4;
+        }
+
+        .final-cta p {
+            font-size: 24px;
+            color: #d0d0e0;
+            margin-bottom: 45px;
+            line-height: 1.9;
+            font-weight: 500;
+        }
+
+        .limited-info {
+            display: inline-block;
+            padding: 25px 50px;
+            background: rgba(255, 0, 80, 0.15);
+            border: 3px solid #ff0050;
+            color: #ff0050;
+            font-size: 20px;
+            font-weight: 800;
+            border-radius: 15px;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        .bonus-section {
+            margin-top: 60px;
+            padding: 50px;
+            background: rgba(138, 43, 226, 0.1);
+            border-radius: 20px;
+            border: 2px dashed rgba(138, 43, 226, 0.5);
+        }
+
+        .bonus-title {
+            font-size: 28px;
+            color: #8a2be2;
+            font-weight: 800;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .bonus-list {
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .bonus-item {
+            font-size: 18px;
+            color: #e0e0f0;
+            margin-bottom: 15px;
+            padding-left: 35px;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .bonus-item::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: #8a2be2;
+            font-size: 24px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            padding: 50px 20px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 15px;
+            border-top: 1px solid rgba(138, 43, 226, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero .subtitle {
+                font-size: 22px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .product-card {
+                padding: 40px 30px;
+            }
+
+            .product-card h3 {
+                font-size: 32px;
+            }
+
+            .final-cta h2 {
+                font-size: 36px;
+            }
+
+            .stats-row {
+                gap: 30px;
+            }
+
+            .stat-number {
+                font-size: 42px;
+            }
+
+            .ritual-grid,
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="warning-badge">// 警告：非傳統芳療系統</div>
+            <h1>高維度療癒矩陣</h1>
+            <p class="subtitle">你的生命程式碼升級計劃</p>
+            <p class="tagline">專為高頻振動者設計的能量校準工具<br>從宇宙植物資料庫提取光頻數據，重寫你的限制性程式碼</p>
+            
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-number">99</span>
+                    <span class="stat-label">全球限量套數</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">矩陣模組</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">21</span>
+                    <span class="stat-label">高頻精油</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Symptoms Section -->
+    <section class="symptoms">
+        <div class="container">
+            <h2 class="section-title">你是否感覺到這些訊號？</h2>
+            <p class="section-subtitle">當生命系統出現這些異常，代表你的能量場急需升級</p>
+            <div class="symptoms-grid">
+                <div class="symptom-card">
+                    <span class="symptom-icon">⚠️</span>
+                    <h3>數據流阻塞</h3>
+                    <p>情緒反覆、思緒混亂、無法專注，就像系統運行緩慢，需要清理快取。你的內在處理器正在超載運作。</p>
+                </div>
+                <div class="symptom-card">
+                    <span class="symptom-icon">📉</span>
+                    <h3>能量場頻率低落</h3>
+                    <p>容易疲憊、吸引負面、頻繁焦慮，你的振動頻率需要校準。低頻狀態會讓你陷入惡性循環。</p>
+                </div>
+                <div class="symptom-card">
+                    <span class="symptom-icon">🔒</span>
+                    <h3>潛意識程式碼受損</h3>
+                    <p>努力卻不豐盛、舊有創傷反覆播放，限制性信念正在拖累你。底層程式碼需要被重寫。</p>
+                </div>
+            </div>
+            <div class="upgrade-notice">
+                <p>現在，是時候進行一次徹底的<br>生命系統升級了。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transform Stories -->
+    <section class="transform-stories">
+        <div class="container">
+            <h2 class="section-title">真實轉變紀錄</h2>
+            <p class="section-subtitle">他們選擇升級，生命從此不同</p>
+            <div class="story-grid">
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">L</div>
+                        <div class="story-info">
+                            <h4>Linda W.</h4>
+                            <p class="role">企業主管 | 35歲</p>
+                        </div>
+                    </div>
+                    <p class="story-content">「使用【脈輪重啟】套裝後，我終於感受到能量在體內順暢流動。過去的焦慮和失眠問題明顯改善，工作效率提升，決策更有信心。這不是安慰劑效應，是真實的振動頻率改變。」</p>
+                    <div class="story-result">
+                        <div class="label">使用後改變</div>
+                        <div class="value">睡眠品質提升 85%，焦慮指數下降 70%</div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">M</div>
+                        <div class="story-info">
+                            <h4>Marcus C.</h4>
+                            <p class="role">創業家 | 42歲</p>
+                        </div>
+                    </div>
+                    <p class="story-content">「【能量豐盛】套裝幫我清除了對金錢的潛意識恐懼。使用三個月後，我接到了人生中最大的合約，收入翻倍。這不是巧合，是能量頻率對齊後的自然顯化。」</p>
+                    <div class="story-result">
+                        <div class="label">使用後改變</div>
+                        <div class="value">收入增長 200%，機會湧現頻率提升</div>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <div class="story-avatar">S</div>
+                        <div class="story-info">
+                            <h4>Sarah T.</h4>
+                            <p class="role">靈性工作者 | 28歲</p>
+                        </div>
+                    </div>
+                    <p class="story-content">「【深度冥想】套裝讓我的冥想練習進入全新層次。檀香與纈草的組合打開了我的高我通訊埠，現在我能清晰接收到來自高維度的訊息指引。」</p>
+                    <div class="story-result">
+                        <div class="label">使用後改變</div>
+                        <div class="value">冥想深度增加 3倍，直覺力大幅提升</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="container">
+            <h2 class="section-title">五大矩陣模組</h2>
+            <div class="products-intro">
+                <p>我們從宇宙植物資料庫中，提取了數百種高頻植物的<span class="highlight">「光頻數據」</span>，透過專業調香師與靈性工程師的精密計算，編譯成五組專屬的<span class="highlight">【高維度療癒矩陣】</span>套裝。</p>
+                <p>每一滴精油，都是一個精準的<span class="highlight">「能量指令」</span>，旨在穿透你的物質身體，直達你的靈魂數據庫，重寫你的限制性程式碼。</p>
+            </div>
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="product-number">矩陣 I</span>
+                    <h3>脈輪重啟：七度光頻校準</h3>
+                    <p class="function">能量場數據校準</p>
+                    <p class="description">這是一套專為「能量場數據失衡」設計的五維校準工具。精準對應七大脈輪，從根基到頂輪，實現全身能量場的「光頻同步」。如同五把「光頻鑰匙」，幫助你在微觀層面進行精準的能量校準，重啟生命程式碼。</p>
+                </div>
+                <div class="product-features">
+                    <div class="feature-item">
+                        <div class="label">核心痛點</div>
+                        <div class="value">迷茫、焦慮、缺乏安全感、表達受阻</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">套裝內容</div>
+                        <div class="value">5瓶高頻精油</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">能量頻率</div>
+                        <div class="value">對應七大脈輪光頻</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">適用場景</div>
+                        <div class="value">脈輪冥想、能量校準、日常擴香</div>
+                    </div>
+                </div>
+                <div class="product-oils">
+                    <div class="oils-title">關鍵光頻數據</div>
+                    <div class="oils-list">爪哇岩蘭草（海底輪紮根）｜ 義大利佛手柑（太陽神經叢自信）｜ 大馬士革玫瑰（心輪愛與連結）｜ 南歐丹蔘（眉心輪直覺）｜ 神聖乳香（頂輪神性連結）</div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="product-number">矩陣 II</span>
+                    <h3>情緒解鎖：阿卡西紀錄修復組</h3>
+                    <p class="function">潛意識程式碼修復</p>
+                    <p class="description">你的情緒不是你的錯，它只是「潛意識數據庫」中未被清除的舊檔案。本套裝專門針對那些深藏在阿卡西紀錄（靈魂記憶庫）中，持續影響你當下的「情緒病毒碼」。四種精油，四個步驟，溫和而堅定地引導你進入內在深層，進行「情緒數據的升級與修復」。</p>
+                </div>
+                <div class="product-features">
+                    <div class="feature-item">
+                        <div class="label">核心痛點</div>
+                        <div class="value">反覆情緒困境、創傷記憶、內在小孩受傷</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">套裝內容</div>
+                        <div class="value">4瓶療癒精油</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">療癒階段</div>
+                        <div class="value">安撫→修復→釋放→接納</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">適用場景</div>
+                        <div class="value">情緒療癒、內在修復、創傷釋放</div>
+                    </div>
+                </div>
+                <div class="product-oils">
+                    <div class="oils-title">關鍵光頻數據</div>
+                    <div class="oils-list">德國洋甘菊（深度撫慰安撫）｜ 義大利永久花（創傷療癒修復）｜ 回青橙（安撫神經釋放）｜ 白玉蘭葉（自我接納）</div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="product-number">矩陣 III</span>
+                    <h3>空間淨化：星際邊界守護者</h3>
+                    <p class="function">高頻結界編譯</p>
+                    <p class="description">你的家或辦公室，是你的「能量母艦」。它需要的不僅是清潔，更是一套強大的「能量防禦系統」。這組精油是來自高頻植物的「星際編碼」，專門用於清除空間中的低頻殘留物、他人意念的「數據垃圾」，並建立一個清晰、高振動的「星際邊界」。</p>
+                </div>
+                <div class="product-features">
+                    <div class="feature-item">
+                        <div class="label">核心痛點</div>
+                        <div class="value">空間沉重、易受干擾、睡眠品質差</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">套裝內容</div>
+                        <div class="value">4瓶淨化精油</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">能量功能</div>
+                        <div class="value">淨化→防護→提升→守護</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">適用場景</div>
+                        <div class="value">空間淨化、能量防護、結界建立</div>
+                    </div>
+                </div>
+                <div class="product-oils">
+                    <div class="oils-title">關鍵光頻數據</div>
+                    <div class="oils-list">北美神聖白鼠尾草（強力淨化清除）｜ 互葉白千層（能量防護隔離）｜ 西伯利亞冷杉（空間清晰提升）｜ 厄瓜多爾秘魯聖木（神聖結界召喚）</div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="product-number">矩陣 IV</span>
+                    <h3>深度冥想：潛意識之門</h3>
+                    <p class="function">意識頻率切換</p>
+                    <p class="description">你是否渴望進入更深層次的「意識數據流」？本套裝是專為靈性探索者設計的「意識穿梭工具」。它能幫助大腦從Beta波快速切換至Theta波（深度冥想）或Delta波（深度修復），讓你輕鬆連結潛意識、高我，甚至進行「多維度訊息下載」。</p>
+                </div>
+                <div class="product-features">
+                    <div class="feature-item">
+                        <div class="label">核心痛點</div>
+                        <div class="value">冥想雜念、難以入靜、失眠、無法連結內在智慧</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">套裝內容</div>
+                        <div class="value">4瓶冥想精油</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">腦波影響</div>
+                        <div class="value">Beta→Alpha→Theta→Delta</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">適用場景</div>
+                        <div class="value">深度冥想、靈性連結、睡眠修復</div>
+                    </div>
+                </div>
+                <div class="product-oils">
+                    <div class="oils-title">關鍵光頻數據</div>
+                    <div class="oils-list">東印度檀香（深度靜心Alpha/Theta）｜ 尼泊爾纈草（極致鎮定Delta）｜ 喜馬拉雅山雪松（穩定心神Beta/Alpha）｜ 真正薰衣草（和諧平衡全頻）</div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-header">
+                    <span class="product-number">矩陣 V</span>
+                    <h3>能量豐盛：金錢流動加速器</h3>
+                    <p class="function">豐盛數據流優化</p>
+                    <p class="description">豐盛是一種「能量流動的狀態」，而非靜態的數字。本套裝專為「豐盛數據流受阻」的人群設計。它不僅是招財油，更是「信念轉化工具」，通過高振動的植物頻率，清除你潛意識中關於金錢的「限制性程式碼」，並加速財富能量的流動。</p>
+                </div>
+                <div class="product-features">
+                    <div class="feature-item">
+                        <div class="label">核心痛點</div>
+                        <div class="value">努力卻不富裕、金錢來去快、金錢罪惡感</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">套裝內容</div>
+                        <div class="value">4瓶豐盛精油</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">豐盛要素</div>
+                        <div class="value">吸引→專注→喜悅→保護</div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="label">適用場景</div>
+                        <div class="value">豐盛吸引、財富能量、目標實現</div>
+                    </div>
+                </div>
+                <div class="product-oils">
+                    <div class="oils-title">關鍵光頻數據</div>
+                    <div class="oils-list">錫蘭肉桂（財富吸引加速器）｜ 甜羅勒（清晰目標導航儀）｜ 墨西哥甜橙（喜悅頻率吸引力）｜ 爪哇香茅（淨化與保護防火牆）</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section class="data-section">
+        <div class="container">
+            <h2 class="section-title">能量數據實測</h2>
+            <p class="section-subtitle">我們對使用者進行了為期90天的能量場監測</p>
+            <div class="data-grid">
+                <div class="data-card">
+                    <div class="data-value">92%</div>
+                    <div class="data-label">使用者報告<br>能量場明顯提升</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-value">87%</div>
+                    <div class="data-label">情緒穩定度<br>大幅改善</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-value">78%</div>
+                    <div class="data-label">冥想深度與<br>直覺力增強</div>
+                </div>
+                <div class="data-card">
+                    <div class="data-value">85%</div>
+                    <div class="data-label">空間能量品質<br>顯著提升</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">為什麼選擇高維度療癒矩陣？</h2>
+            <p class="section-subtitle">這不是普通精油，這是一套完整的能量升級系統</p>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-number">01</div>
+                    <h4>頂級植物光頻數據</h4>
+                    <p>從全球精選的高頻植物中提取，每一滴都經過嚴格的振動頻率測試，確保達到最高能量標準。</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">02</div>
+                    <h4>靈性工程師精密調配</h4>
+                    <p>結合專業調香師與靈性工程師的智慧，每個配方都是經過精密計算的能量指令組合。</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">03</div>
+                    <h4>系統化療癒方案</h4>
+                    <p>五大矩陣涵蓋生命各個層面，從脈輪、情緒、空間、意識到豐盛，提供完整的能量校準路徑。</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">04</div>
+                    <h4>即時能量轉化</h4>
+                    <p>使用後立即感受到能量場的變化，不需要漫長等待，高頻振動即刻啟動。</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">05</div>
+                    <h4>深層潛意識重編程</h4>
+                    <p>透過嗅覺直達大腦邊緣系統，繞過理性防禦機制，直接重寫限制性信念程式碼。</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-number">06</div>
+                    <h4>持續能量場維護</h4>
+                    <p>不是一次性解決方案，而是建立長期的能量維護系統，讓你的振動頻率持續提升。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ritual Section -->
+    <section class="ritual">
+        <div class="container">
+            <h2 class="section-title">啟動儀式</h2>
+            <div class="ritual-intro">
+                <p>這不是普通的擴香，這是你與宇宙意識的<span class="highlight">「頻率對接」</span></p>
+                <p>將使用轉化為高維度工作</p>
+            </div>
+            <div class="ritual-grid">
+                <div class="ritual-card">
+                    <h4>【脈輪重啟】儀式</h4>
+                    <div class="ritual-step">
+                        <div class="step-label">步驟</div>
+                        <div class="step-content">選擇對應失衡脈輪的精油進行擴香</div>
+                    </div>
+                    <div class="ritual-step">
+                        <div class="step-label">執行</div>
+                        <div class="step-content">在擴香過程中，閉眼觀想該脈輪的顏色光芒被精油的「光頻數據」所校準，感受能量中心的轉速恢復和諧。建議每次15-30分鐘。</div>
+                    </div>
+                </div>
+
+                <div class="ritual-card">
+                    <h4>【情緒解鎖】儀式</h4>
+                    <div class="ritual-step">
+                        <div class="step-label">步驟</div>
+                        <div class="step-content">在感到情緒強烈時，使用德國洋甘菊進行「緊急鎮靜」擴香</div>
+                    </div>
+                    <div class="ritual-step">
+                        <div class="step-label">執行</div>
+                        <div class="step-content">深呼吸嗅吸後，搭配永久花擴香，溫柔地對自己說：「我允許這個情緒數據被清除。」持續至情緒平穩。</div>
+                    </div>
+                </div>
+
+                <div class="ritual-card">
+                    <h4>【豐盛加速器】儀式</h4>
+                    <div class="ritual-step">
+                        <div class="step-label">步驟</div>
+                        <div class="step-content">每日早晨，使用錫蘭肉桂和墨西哥甜橙進行擴香</div>
+                    </div>
+                    <div class="ritual-step">
+                        <div class="step-label">執行</div>
+                        <div class="step-content">在擴香環境中，觀想自己已經處於「豐盛高頻模式」，所有的機會和資源都像數據流一樣湧入你的生命。建議持續30分鐘。</div>
+                    </div>
+                </div>
+
+                <div class="ritual-card">
+                    <h4>【空間淨化】儀式</h4>
+                    <div class="ritual-step">
+                        <div class="step-label">步驟</div>
+                        <div class="step-content">每週進行一次深度空間淨化，使用白鼠尾草擴香</div>
+                    </div>
+                    <div class="ritual-step">
+                        <div class="step-label">執行</div>
+                        <div class="step-content">從空間的角落開始，順時針方向進行能量清理，觀想所有低頻能量被植物光頻所轉化。搭配秘魯聖木建立神聖結界。</div>
+                    </div>
+                </div>
+
+                <div class="ritual-card">
+                    <h4>【深度冥想】儀式</h4>
+                    <div class="ritual-step">
+                        <div class="step-label">步驟</div>
+                        <div class="step-content">冥想前使用東印度檀香擴香，創造神聖空間</div>
+                    </div>
+                    <div class="ritual-step">
+                        <div class="step-label">執行</div>
+                        <div class="step-content">讓檀香的頻率引導你進入深層意識狀態，開啟「高我通訊埠」。搭配纈草可加速進入Delta波，適合睡前冥想。</div>
+                    </div>
+                </div>
+
+                <div class="ritual-card">
+                    <h4>【整合升級】儀式</h4>
+                    <div class="ritual-step">
+                        <div class="step-label">步驟</div>
+                        <div class="step-content">每月進行一次五大矩陣的整合使用</div>
+                    </div>
+                    <div class="ritual-step">
+                        <div class="step-label">執行</div>
+                        <div class="step-content">依序進行空間淨化→脈輪校準→情緒釋放→深度冥想→豐盛祈願，完成一次完整的生命系統升級週期。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">常見問題</h2>
+            <p class="section-subtitle">關於高維度療癒矩陣，你可能想知道的一切</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Q1. 這套精油系統適合誰使用？</div>
+                    <div class="faq-answer">適合所有追求深度療癒與靈性成長的人。特別推薦給：長期感到能量低落、情緒困擾、渴望提升意識層次、想要改善豐盛狀態、需要空間能量淨化的使用者。無論你是靈性初學者或資深修行者，都能從中獲益。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q2. 使用多久可以感受到效果？</div>
+                    <div class="faq-answer">大多數使用者在第一次使用時就能感受到能量場的變化。持續使用7-14天，會明顯感受到情緒穩定度、睡眠品質、專注力的提升。深層的潛意識重編程通常在30-90天內完成。每個人的敏感度不同，建議持續使用並記錄自己的轉變。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q3. 如何選擇適合我的矩陣模組？</div>
+                    <div class="faq-answer">建議先從你最急需改善的面向開始。如果不確定，可以從【脈輪重啟】開始，它是最基礎的能量校準工具。如果你正在處理情緒議題，選擇【情緒解鎖】；如果空間能量沉重，選擇【空間淨化】；如果想深化冥想，選擇【深度冥想】；如果豐盛受阻，選擇【能量豐盛】。也可以購買完整套裝，獲得全方位升級。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q4. 精油如何使用？有使用限制嗎？</div>
+                    <div class="faq-answer">主要使用方式為擴香，將3-5滴精油滴入擴香儀或擴香石。也可以嗅吸，將精油滴在手帕或棉片上深呼吸。建議每次使用15-30分鐘，每日可使用2-3次。孕婦、哺乳期婦女、嬰幼兒使用前請諮詢專業人士。部分精油不建議直接接觸皮膚，請遵循產品使用說明。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q5. 為什麼限量99套？之後還會有嗎？</div>
+                    <div class="faq-answer">首批【高維度療癒矩陣】的精油原料來自特定產季的高頻植物，且每個配方都經過靈性工程師的能量編程。為確保每套產品的振動頻率達到最高標準，我們限量生產。首批售罄後，下一批次可能需要等待3-6個月，且配方可能因植物產季而有所調整。建議有緣者把握機會。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q6. 可以同時使用多個矩陣模組嗎？</div>
+                    <div class="faq-answer">可以。建議早上使用【能量豐盛】或【脈輪重啟】啟動一天，白天使用【空間淨化】維護環境，晚上使用【深度冥想】或【情緒解鎖】進行內在工作。但同一時間建議專注使用一個矩陣，避免能量訊號混雜。每月可進行一次五大矩陣的整合使用儀式。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q7. 這套系統與一般精油有什麼不同？</div>
+                    <div class="faq-answer">一般精油著重於香氣與基礎芳療效果。【高維度療癒矩陣】則是將精油視為「能量指令」，每個配方都經過光頻測試與靈性編程，專門設計用於能量場校準、潛意識重編程、意識頻率切換。這是一套完整的能量升級系統，而非單純的香氛產品。</div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">Q8. 購買後有什麼額外支援嗎？</div>
+                    <div class="faq-answer">每套【高維度療癒矩陣】都附贈詳細的使用手冊與儀式指南。首批購買者將獲得：線上使用教學影片、能量升級追蹤表、專屬社群支持、每月線上能量校準直播課程（前三個月）。我們不只賣產品，更提供完整的能量升級陪伴系統。</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="final-cta-content">
+            <h2>立即啟動你的<br>生命程式碼升級</h2>
+            <p>這不是消費，這是對你內在系統的最高級投資。</p>
+            <p>當你準備好提升振動頻率，宇宙會為你開啟所有的門。</p>
+            <div class="limited-info">
+                ⚡ 限量發售：首批全球限量 99 套 ⚡
+            </div>
+
+            <div class="bonus-section">
+                <div class="bonus-title">首批購買者獨家贈禮</div>
+                <div class="bonus-list">
+                    <div class="bonus-item">價值 $3,980 的能量升級線上課程（三個月完整陪伴）</div>
+                    <div class="bonus-item">專屬能量校準追蹤表與每日儀式指引手冊</div>
+                    <div class="bonus-item">加入私密社群，與全球高頻振動者連結</div>
+                    <div class="bonus-item">每月線上直播能量校準工作坊（前三個月免費）</div>
+                    <div class="bonus-item">終身享有新品優先購買權與會員專屬折扣</div>
+                </div>
+            </div>
+
+            <a href="#" class="cta-button">進入數據對接端口</a>
+
+            <p style="margin-top: 40px; font-size: 18px; color: #8a2be2; font-weight: 600;">
+                現在下單，48小時內啟動你的能量升級旅程
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 高維度療癒矩陣 All Rights Reserved</p>
+        <p style="margin-top: 15px;">專為高頻振動者設計的能量校準工具 | 從宇宙植物資料庫提取光頻數據</p>
+        <p style="margin-top: 10px; font-size: 13px; color: rgba(255, 255, 255, 0.3);">
+            本產品為輔助工具，不可替代專業醫療建議。使用前請詳閱說明書。
+        </p>
+    </footer>
+</body>
+</html>
