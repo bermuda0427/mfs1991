@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>內容創作服務報價單</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft JhengHei', 'Segoe UI', Arial, sans-serif;
+            background: white;
+            padding: 40px 20px;
+            line-height: 1.8;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: white;
+            color: #333;
+            padding: 40px;
+            text-align: center;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .header p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+        }
+        
+        .service-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            background: white;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            background: #fafafa;
+            border-color: #d0d0d0;
+            transform: translateX(5px);
+        }
+        
+        .service-name {
+            font-size: 16px;
+            color: #495057;
+        }
+        
+        .service-quantity {
+            font-size: 14px;
+            color: #6c757d;
+            margin-left: 10px;
+        }
+        
+        .service-price {
+            font-size: 18px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background: #f8f9fa;
+            border-left: 4px solid #2c3e50;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box h3 {
+            font-size: 16px;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .highlight-box ul {
+            list-style: none;
+            padding-left: 0;
+            color: #555;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        .highlight-box ul li {
+            padding: 4px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .highlight-box ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #888;
+        }
+        
+        .total-box {
+            background: white;
+            border: 2px solid #333;
+            color: #333;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: center;
+            margin-top: 25px;
+        }
+        
+        .total-label {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #666;
+        }
+        
+        .total-amount {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #2c3e50;
+        }
+        
+        .note-text {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .service-box {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+        
+        .service-box h3 {
+            font-size: 17px;
+            color: #2c3e50;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        
+        .service-box ul {
+            list-style: none;
+            padding-left: 0;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.9;
+        }
+        
+        .service-box ul li {
+            padding: 6px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        
+        .service-box ul li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #888;
+        }
+        
+        .service-box .subtotal {
+            text-align: right;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #f0f0f0;
+        }
+        
+        .service-box .subtotal-label {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .service-box .subtotal-amount {
+            font-size: 20px;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+        
+        .footer {
+            background: white;
+            border-top: 1px solid #e0e0e0;
+            padding: 25px 40px;
+            text-align: center;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                border: none;
+            }
+            
+            .service-item:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>瑞泰網站內容行銷服務報價單</h1>
+            <p>專業社群行銷 × 內容優化 × 數據分析方案</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">服務項目與單價</h2>
+                
+                <div class="service-item">
+                    <div>
+                        <span class="service-name">Facebook 貼文創作</span>
+                        <span class="service-quantity">（含連結置入與CTA設計）</span>
+                    </div>
+                    <div class="service-price">NT$ 200 <span style="font-size: 14px; font-weight: normal;">/篇</span></div>
+                </div>
+                
+                <div class="service-item">
+                    <div>
+                        <span class="service-name">長照專欄文章</span>
+                        <span class="service-quantity">（深度擴寫，1,200-1,500字）</span>
+                    </div>
+                    <div class="service-price">NT$ 600 <span style="font-size: 14px; font-weight: normal;">/篇</span></div>
+                </div>
+                
+                <div class="service-item">
+                    <div>
+                        <span class="service-name">每週流量分析報告</span>
+                        <span class="service-quantity">（3個平台數據比較）</span>
+                    </div>
+                    <div class="service-price">NT$ 300 <span style="font-size: 14px; font-weight: normal;">/週</span></div>
+                </div>
+                
+                <div class="service-item">
+                    <div>
+                        <span class="service-name">每月流量分析報告</span>
+                        <span class="service-quantity">（含文章排名與受眾分析）</span>
+                    </div>
+                    <div class="service-price">NT$ 300 <span style="font-size: 14px; font-weight: normal;">/月</span></div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>🎯 重點推廣方向</h3>
+                <ul>
+                    <li>長照專欄聚焦在多元陪伴與居家服務的自費推廣</li>
+                    <li>瑞泰照護體系粉專：置入長照相關服務、居家服務、多元陪伴行銷</li>
+                    <li>瑞泰基金會粉專：含置入引導官網，但不做行銷行為（非營利組織）</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">每月執行內容</h2>
+                
+                <div class="service-box">
+                    <h3>瑞泰照護體系粉絲團 Facebook 貼文 × 8篇</h3>
+                    <ul>
+                        <li>專業長照主題內容撰寫（300-500字）</li>
+                        <li>配圖設計建議或圖片素材搭配</li>
+                        <li>其中1-2篇可製作為動態影片形式（圖文轉動態視覺）</li>
+                        <li>置入行銷：長照相關服務、居家服務、多元陪伴</li>
+                        <li>官網連結與 LINE@ 導流置入</li>
+                        <li>CTA（行動呼籲）文案設計</li>
+                    </ul>
+                    <div class="subtotal">
+                        <span class="subtotal-label">小計：</span>
+                        <span class="subtotal-amount">NT$ 1,600</span>
+                    </div>
+                </div>
+                
+                <div class="service-box">
+                    <h3>瑞泰基金會粉絲團 Facebook 貼文 × 8篇</h3>
+                    <ul>
+                        <li>基金會活動／理念主題內容撰寫（300-500字）</li>
+                        <li>配圖設計建議或圖片素材搭配</li>
+                        <li>其中1-2篇可製作為動態影片形式（圖文轉動態視覺）</li>
+                        <li>官網連結置入引導（非營利組織，不做行銷行為）</li>
+                        <li>募款／參與呼籲文案優化</li>
+                    </ul>
+                    <div class="subtotal">
+                        <span class="subtotal-label">小計：</span>
+                        <span class="subtotal-amount">NT$ 1,600</span>
+                    </div>
+                </div>
+                
+                <div class="service-box">
+                    <h3>長照專欄文章 × 8篇</h3>
+                    <ul>
+                        <li>從 FB 貼文精選主題深度擴寫（每週2篇）</li>
+                        <li>完整文章撰寫（1,200-1,500字）</li>
+                        <li>文章配圖設計或圖片影像處理</li>
+                        <li>SEO 關鍵字優化與段落結構規劃</li>
+                        <li>符合長照產業專業用語與法規用字</li>
+                        <li>官網連結與 LINE@ 置入</li>
+                        <li>聚焦多元陪伴與居家服務自費推廣</li>
+                    </ul>
+                    <div class="subtotal">
+                        <span class="subtotal-label">小計：</span>
+                        <span class="subtotal-amount">NT$ 4,800</span>
+                    </div>
+                </div>
+                
+                <div class="service-box">
+                    <h3>數據分析服務</h3>
+                    <ul>
+                        <li><strong>每週流量分析報告</strong>（×4次）
+                            <ul style="margin-top: 8px;">
+                                <li>上週流量分析表</li>
+                                <li>與上上週數據比較</li>
+                                <li>涵蓋：官網 + 長照粉專 + 基金會粉專</li>
+                            </ul>
+                        </li>
+                        <li style="margin-top: 12px;"><strong>每月流量分析報告</strong>
+                            <ul style="margin-top: 8px;">
+                                <li>月流量分析表及與上月數據比較</li>
+                                <li>數據圖表與分析圖呈現</li>
+                                <li>文章排名分析與受眾喜好需求分析</li>
+                                <li>列出當月所有發表文章標題</li>
+                                <li>涵蓋3個平台完整數據</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="subtotal">
+                        <span class="subtotal-label">小計：</span>
+                        <span class="subtotal-amount">NT$ 1,500</span>
+                    </div>
+                </div>
+                
+                <div class="total-box">
+                    <div class="total-label">每月服務費用（固定項目）</div>
+                    <div class="total-amount">NT$ 9,500</div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">不定期服務項目（依實際執行計價）</h2>
+                
+                <div class="service-item">
+                    <div>
+                        <span class="service-name">特殊活動專題文章</span>
+                        <span class="service-quantity">（當月不定期特殊活動）</span>
+                    </div>
+                    <div class="service-price">NT$ 600 <span style="font-size: 14px; font-weight: normal;">/篇</span></div>
+                </div>
+                
+                <div class="service-item">
+                    <div>
+                        <span class="service-name">院區及社區據點活動發文</span>
+                        <span class="service-quantity">（依社工提供影片撰寫）</span>
+                    </div>
+                    <div class="service-price">NT$ 450 <span style="font-size: 14px; font-weight: normal;">/篇</span></div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h3>🔗 導入連結資訊</h3>
+                <ul>
+                    <li><strong>瑞泰照護體系官網：</strong>https://raytai.org.tw/</li>
+                    <li><strong>官方LINE@〔瑞泰照護管家〕：</strong>https://line.me/R/ti/p/@624cfdsb</li>
+                    <li>待瑞福上架購物網後，將置入行銷推薦連結（健康輔具、營養補充品、環境改善工程）</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>本報價單有效期限：30天 ｜ 付款方式：月結30天</p>
+            <p style="margin-top: 8px;">如有任何問題，歡迎隨時洽詢</p>
+        </div>
+    </div>
+</body>
+</html>
